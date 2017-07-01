@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/root_layout"
+>
+<head lang="en">
+
+    <title>Spring Framework Guru</title>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          rel="stylesheet" media="screen" />
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+
+</head>
+
+<body>
+
+<div  layout:fragment="page-content">
+    <div th:include="orderresults"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+
+<div th:fragment="resultsList" th:unless="${#lists.isEmpty(userslist)}"  class="results-block">
+    <div layout:fragment="page-content">
+    <table>
+        <thead>
+        <tr th:bgcolor="red">
+            <th>Id</th>
+            <th >Quantity</th>
+            <th >Price</th>
+
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="order :${userslist}">
+            <td th:text="${order.id}">id</td>
+            <td th:text="${order.quantity}">id</td>
+            <td th:text="${order.price}">id</td>
+
+
+ </tr>
+        </tbody>
+
+    </table>
+</div>
+</div>
+        </div>
+        </div></div>
+
+</div>
+</body>
+</html>

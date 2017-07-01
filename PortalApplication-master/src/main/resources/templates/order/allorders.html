@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/root_layout"
+>
+<head lang="en">
+
+    <title>Online Store</title>
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          rel="stylesheet" media="screen" />
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .thumbnail{
+            max-height: 50px;
+            max-width: 50px;
+        }
+    </style>
+    <script th:inline="javascript" type="text/javascript">
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+<div class="table-responsive" class="col-lg-10 col-md-6 col-sm-3" >
+<div layout:fragment="page-content">
+
+
+        <!--<th:block th:include="fragments/header :: header"></th:block>
+        <th:block th:bgcolor="groovy" th:include="fragments/headerinc ::head"></th:block>
+        -->
+
+        <td th:if="${not #lists.isEmpty(orderslist)}">
+            <h2>Order Detail</h2>
+            <div align="left" style="font-family: 'Microsoft Sans Serif' , Arial, Helvetica, Verdana;color: #00a7d0"><a th:href="@{/product/new}" ><button type="button" class="btn btn-primary"> Add Product</button></a></div>
+            <!--<div align="right"><a th:href="@{/UserDetail/Order/testusers}" ><button type="button" class="btn btn-primary"> Order Listt</button></a></div>-->
+            <div  align="right" style="margin-right: 5px;"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for price.."/> </div>
+
+            <br/>
+            <div align="right"> <button type="button"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Ordered Items</button>
+            </div>
+
+            <br/>
+            <table id="myTable" class="table table-striped">
+                <tr style="font-family: Sans-Serif ; font-style: inherit" >
+                    <th>Order_ID</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+
+                </tr>
+                <tr  th:each="order: ${orderslist}">
+
+
+                    <td th:text="${order.id}">Product Name</td>
+                    <td th:text="${order.quantity}">descirption</td>
+                    <td th:text="${order.price}">price</td>
+
+                    <!--
+                                        <td><a th:href="${'/order/edit/'+ order.id}">Edit</a></td>
+
+                                        <div th:each="relatedWord: ${order.productlist}">
+                                            <td th:text="${relatedWord.name}"></td></div>
+                    -->
+
+                </tr>
+
+            </table>
+
+
+            <div id="myModal" class="modal fade"  role="dialog">
+                <div class="modal-dialog" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title" style="font-family: 'Microsoft Sans Serif' , Arial, Helvetica, Verdana;font-style: normal;color: #00a7d0">Ordered Items</h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <table  class="table table-striped">
+                                <tr style="font-family: Sans-Serif ; font-style: inherit" >
+                                    <th>Order_ID</th>
+
+                                    <th>Ordered Items </th>
+
+
+                                </tr>
+                                <tr  th:each="order: ${orderslist}">
+
+
+                                    <td th:text="${order.id}">Product Name</td>
+
+
+                                    <div th:each="relatedWord: ${order.productlist}">
+                                        <td th:text="${relatedWord.name}"></td></div>
+
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal" style="color: #00a7d0">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+    <!--
+    <table>
+        <span th:each="order: ${orderslist}">
+             <td >
+                    <tr th:each="relatedWord: ${order.productlist}">
+                        <p th:text="${relatedWord.id}"></p>
+                    <p th:text="${relatedWord.name}"></p>
+                    </tr>
+                    </td>
+
+        </span>
+    </table>
+
+    -->
+
+
+</div>
+
+
+</body>
+</html>

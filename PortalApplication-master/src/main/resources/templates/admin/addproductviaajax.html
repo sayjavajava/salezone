@@ -1,0 +1,93 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/root_layout"
+>
+
+<head>
+    <title>E-Shop</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          rel="stylesheet" media="screen" />
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/js/bootstrap.min.js"
+          th:href="@{/webjars/bootstrap/3.3.6/js/bootstrap.min.js}"
+          rel="stylesheet" media="screen" />
+
+    <script th:src="@{/js/upload.js}"></script>
+
+    <script th:src="@{/js/postrequest.js}"></script>
+
+
+</head>
+<body>
+<div layout:fragment="page-content">
+    <section class="content">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="box box-primary">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Product Form</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <!-- form start -->
+
+
+                    <div aligsn="right" style="margin-right: 20px"><a th:href="@{/products}" ><button type="button" class="btn btn-primary"> All Products</button></a></div><br/>
+
+
+
+                        <div id="postdiv">
+                            <form id="customerForm">
+                                <label>Product Name</label>
+                                <input type="text" id="name" class="form-control" required="true"/>
+                                <label>Price</label>
+                                <input type="text" id="price" class="form-control" required="true"/>
+                                <br/><br/>
+
+                                <label id ="company" >Select one category :</label>
+
+
+                                <div class="form-group">
+<div class="col-lg">
+
+                                <select id="selectedcategory" class="form-control" >
+                                    <option value="Cell">cell</option>
+                                    <option value="Laptop">laptop</option>
+                                    <option value="Dairy">Dairy</option>
+                                    <option value="Cloth">Cloth</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Electric"></option>
+                                </select>
+</div>
+                                </div>
+                                    <br/><br/>
+
+                                <label>Description</label>
+                                <input type="text" id="description" class="form-control"/>
+
+                                <label>Image Url</label>
+                                <input type="text" id="imageUrl" class="form-control" required="true"/>
+ <br/>
+
+                                <button type="submit" id="postBtn" class="btn btn-primary">Submit</button>
+                            </form>
+                        <!--</div>
+                        <div id="postResultDiv">
+                        </div>
+                        <br/>
+                        <div id="getdiv">
+                            <button id="getBtn" >Get All Customers</button>
+                        </div>
+                        <div id="getResultDiv">
+                            <ul class="list-group">
+                            </ul>
+                        </div>
+-->
+
+</div></div></div></div></section></div>
+</body>
+</html>
