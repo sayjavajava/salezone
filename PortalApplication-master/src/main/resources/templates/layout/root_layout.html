@@ -147,13 +147,13 @@
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
 
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <span class="hidden-xs">Zain UL Haq Moulvi</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="../../static/images/user2-160x160.jpg"
-                                     th:src="@{/images/user2-160x160.jpg}" class="img-circle" alt="User Image"/>
+                                <img src="../../static/images/waqas-image.jpg"
+                                     th:src="@{/images/waqas-image.jpg}" class="img-circle" alt="User Image"/>
                                 <p>
                                     Alexander Pierce - Web Developer
                                     <small>Member since Nov. 2012</small>
@@ -203,8 +203,8 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="../../static/images/user2-160x160.jpg" class="img-circle" alt="User Image"
-                         th:src="@{/images/user2-160x160.jpg}" class="img-circle" alt="User Image"/>
+                    <img src="../../static/images/waqas-image.jpg" class="img-circle" alt="User Image"
+                         th:src="@{/images/waqas-image.jpg}" class="img-circle" alt="User Image"/>
 
                 </div>
                 <div class="pull-left info">
@@ -239,7 +239,9 @@
                     </ul>
                 </li>
                 <div layout:fragment="order-detail">
-                <a th:href="@{/order/allordersdata}" ><i class="fa fa-circle-o"></i> Order Detail</a></div>
+                    <li><a th:href="@{/products}" ><i class="fa fa-circle-o"></i> All Products</a><li>
+                    <li><a th:href="@{/order/allordersdata}" ><i class="fa fa-circle-o"></i> Order Detail</a></li>
+                </div>
                 <!--<li class="treeview active">
                     <a href="#">
                         <i class="fa fa-files-o"></i>

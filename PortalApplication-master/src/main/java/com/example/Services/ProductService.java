@@ -28,7 +28,7 @@ public class ProductService  {
     return list;}
 
     public String save(Product product){
-       product.setOrderDetail(null);
+      // product.setOrderDetail(null);
         productDAO.save(product);
         return "task-saved";
     }

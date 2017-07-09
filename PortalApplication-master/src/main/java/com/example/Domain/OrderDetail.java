@@ -24,21 +24,21 @@ public class OrderDetail {
     @JoinColumn(name="purchased_By")
     private user PurchasedBy;
 
-//    @ManyToMany
-//     private Set<Product> productlist = new HashSet<Product>();
+    @ManyToMany
+    @JoinTable(name = "order_product_test", joinColumns = { @JoinColumn(name = "order_detail_id") }, inverseJoinColumns = { @JoinColumn(name = "productlist_id") })
+    private Set<Product> productlist = new HashSet<Product>();
 
-    @OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
+    /*@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
     @JsonBackReference
     @JoinTable(
             name="order_detail_productlist",
             joinColumns=@JoinColumn(name="order_detail_id", referencedColumnName="id"),
             inverseJoinColumns=@JoinColumn(name="productlist_id", referencedColumnName="id"))
-private Set<Product> productlist = new HashSet<Product>();
+            private Set<Product> productlist = new HashSet<Product>();
+*/
 
 
-
-
-    public Set<Product> getProductlist() {
+   public Set<Product> getProductlist() {
         return productlist;
     }
 

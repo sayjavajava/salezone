@@ -36,10 +36,14 @@ private Integer id;*/
     @JoinColumn(name="category_id")
     private Category category;
 
-    @ManyToOne
+/*
+
+    @ManyToOne(cascade = CascadeType.REMOVE)
     @OnDelete(action = OnDeleteAction.CASCADE)
     private OrderDetail orderDetail;
+*/
 
+/*
     public OrderDetail getOrderDetail() {
         return orderDetail;
     }
@@ -47,6 +51,7 @@ private Integer id;*/
     public void setOrderDetail(OrderDetail orderDetail) {
         this.orderDetail = orderDetail;
     }
+*/
 
     @Transient
     private String selectedcategory;

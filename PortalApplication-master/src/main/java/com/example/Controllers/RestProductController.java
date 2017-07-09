@@ -100,13 +100,12 @@ public class RestProductController {
             @RequestParam("uploadfile") MultipartFile uploadfile) {
 
         try {
-            // Get the filename and build the local file path (be sure that the
-            // application have write permissions on such directory)
+
             String filename = uploadfile.getOriginalFilename();
             String directory = environment.getProperty("netgloo.paths.uploadedFiles");
             String filepath = Paths.get(directory, filename).toString();
 
-            // Save the file locally
+            // Save the file
             BufferedOutputStream stream =
                     new BufferedOutputStream(new FileOutputStream(new File(filepath)));
             stream.write(uploadfile.getBytes());
