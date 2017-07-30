@@ -25,7 +25,7 @@ public class OrderDetail {
     private user PurchasedBy;
 
     @ManyToMany
-    @JoinTable(name = "order_product_test", joinColumns = { @JoinColumn(name = "order_detail_id") }, inverseJoinColumns = { @JoinColumn(name = "productlist_id") })
+    @JoinTable(name = "order_product_final", joinColumns = { @JoinColumn(name = "order_detail_id") }, inverseJoinColumns = { @JoinColumn(name = "productlist_id") })
     private Set<Product> productlist = new HashSet<Product>();
 
     /*@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
@@ -45,7 +45,6 @@ public class OrderDetail {
     public void setProductlist(Set<Product> productlist) {
         this.productlist = productlist;
     }
-
     public user getPurchasedBy() {
         return PurchasedBy;
     }

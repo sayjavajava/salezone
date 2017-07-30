@@ -58,6 +58,8 @@ for(Product od : orderDetaildomain.getProductlist()){
 public Page<OrderDetail> findAll(Pageable pageable){
     return orderDetailDAO.findAll(pageable);
 }
+
+
 public List<OrderDetail> findAllOrdsers(){
   //  List<OrderDetail> testlist = orderDetailDAO.findAll();
 
@@ -70,6 +72,12 @@ public List<OrderDetail> findAllOrdsers(){
 }*/
     return orderDetailDAO.findAll();
 }
+    public String delete(int id){
+
+
+        orderDetailDAO.delete(id);
+        return "order deleted ";
+    }
 
 public OrderDetail findById(int id){
     OrderDetail orderDetail = orderDetailDAO.findOne(id);
@@ -83,4 +91,8 @@ return orderDetail;
 return ;
 }*/
 
+public void DeleteOrder(int id){
+
+    orderDetailDAO.delete(id);
+}
 }

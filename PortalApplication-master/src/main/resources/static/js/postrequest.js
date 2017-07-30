@@ -3,7 +3,7 @@ $( document ).ready(function() {
 	var url = window.location;
 	
 	// SUBMIT FORM
-    $("#customerForm").submit(function(event) {
+    $("#upload-file-form").submit(function(event) {
 		// Prevent the form from submitting via the browser.
 		event.preventDefault();
 		ajaxPost();
@@ -45,7 +45,7 @@ $( document ).ready(function() {
 				console.log(result);
 			},
 			error : function(e) {
-				alert("Error!")
+				alert("Error!"+e);
 				console.log("ERROR: ", e);
 			}
 		});

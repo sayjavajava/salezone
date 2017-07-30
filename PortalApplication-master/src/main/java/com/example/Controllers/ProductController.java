@@ -98,7 +98,7 @@ private final org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass())
         if(bindingResult.hasErrors()){
             return "admin/addproduct";
         }
-        product.setImageUrl(product.getImageUrl()+"."+"jpg");
+     //   product.setImageUrl(product.getImageUrl()+"."+"jpg");
       //  product.setProduct_uid(product.getId());
 
         productService.save(product);
@@ -159,32 +159,29 @@ public String loadFile(){
     return "upload";
 }
 
-   /* @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
+    @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
     @ResponseBody
     public ResponseEntity<?> uploadFile(
-            @RequestParam("uploadfile") MultipartFile uploadfile)
-    {
+            @RequestParam("uploadfile") MultipartFile uploadfile) {
 
         try {
-            // Get the filename and build the local file path (be sure that the
-            // application have write permissions on such directory)
-            String[] fileFrags = uploadfile.getOriginalFilename().split("\\.");
-            String extension = fileFrags[fileFrags.length-1];
 
             String filename = uploadfile.getOriginalFilename();
-            mod.append(extension);
-            System.err.println("loadedfile" +mod );
             String directory = environment.getProperty("netgloo.paths.uploadedFiles");
-         //   String filepath = Paths.get("."+ File.separator + directory, filename).toString();
-            String filepath = Paths.get(directory,filename).toString();
-            // Save the file locally
-            BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(new File(filepath)));
+
+            String filepath = Paths.get(directory, filename).toString();
+
+            // Save the file
+            BufferedOutputStream stream =
+                    new BufferedOutputStream(new FileOutputStream(new File(filepath)));
             stream.write(uploadfile.getBytes());
             stream.close();
         }
         catch (Exception e) {
             System.out.println(e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);}
+            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
+        }
+
         return new ResponseEntity<>(HttpStatus.OK);
-    }*/
+    }
 }

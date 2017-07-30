@@ -1,11 +1,9 @@
 package com.example.Controllers;
 
 import com.example.Domain.*;
-import com.example.Services.CategoryService;
+import com.example.Helper.UserInfo;
+import com.example.Services.*;
 import com.example.message.Response;
-import com.example.Services.OrderDetailservice;
-import com.example.Services.ProductService;
-import com.example.Services.UserServices;
 import org.hibernate.cfg.Environment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -36,6 +34,9 @@ public class RestProductController {
     private UserServices userServices;
 
     @Autowired
+    private RolesServices rolesServices;
+
+    @Autowired
      org.springframework.core.env.Environment environment;
 
     @Autowired
@@ -48,11 +49,21 @@ public class RestProductController {
         return products;
     }
     @RequestMapping(value = "productrest" , method = RequestMethod.GET)
-    public @ResponseBody List<Product> listAllUsers() {
+    public @ResponseBody List<Product> listAllProducts() {
         List<Product> product = productService.findAll();
         return product;
     }
 
+    @RequestMapping(value = "user/allusers" , method = RequestMethod.GET)
+    public @ResponseBody List<user> listAllUsers() {
+        List<user> users = userServices.findAllUsers();
+        return users;
+    }
+    @RequestMapping(value = "admin/allusers" , method = RequestMethod.GET)
+    public @ResponseBody List<user> listAllUsersforadmin() {
+        List<user> users = userServices.findAllUsers();
+        return users;
+    }
     @RequestMapping(value ="orderrest" , method = RequestMethod.GET)
     public @ResponseBody List<OrderDetail> orderrest() {
         List<OrderDetail> products =orderDetailservice.findAllOrdsers() ;
@@ -94,30 +105,15 @@ public class RestProductController {
         return response;
     }
 
-    @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
-    @ResponseBody
-    public ResponseEntity<?> uploadFile(
-            @RequestParam("uploadfile") MultipartFile uploadfile) {
 
-        try {
-
-            String filename = uploadfile.getOriginalFilename();
-            String directory = environment.getProperty("netgloo.paths.uploadedFiles");
-            String filepath = Paths.get(directory, filename).toString();
-
-            // Save the file
-            BufferedOutputStream stream =
-                    new BufferedOutputStream(new FileOutputStream(new File(filepath)));
-            stream.write(uploadfile.getBytes());
-            stream.close();
-        }
-        catch (Exception e) {
-            System.out.println(e.getMessage());
-            return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
-        }
-
-        return new ResponseEntity<>(HttpStatus.OK);
+    @RequestMapping(path = "/getusersdata", method = RequestMethod.GET)
+    public ResponseEntity get_data_on_login() throws Exception {
+        List<Roles> roles = rolesServices.allroles();
+        List<user> users = userServices.findAllUsers();
+        return new ResponseEntity( new UserInfo( users, roles ), HttpStatus.OK );
     }
+
+
 }
 
 

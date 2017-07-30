@@ -8,6 +8,13 @@
 
     <title>Online-store</title>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+          rel="stylesheet" media="screen" />
+
     <style>
         #bottom-left
         {
@@ -26,8 +33,9 @@
         <div>
             <form class="form-horizontal">
                 <div class="col-sm-3">
-                    <td><img src="../../static/uploads/*"
-                             th:src="@{'/uploads/'+${product.imageUrl}}" class="thumbnail2"/></td>
+                    <td><img src="../../static/*"
+                             th:src="@{'/'+${product.imageUrl}}" class="thumbnail2"/></td>
+
                 </div>
 <div class="col-sm-6">
                 <div class="form-group">

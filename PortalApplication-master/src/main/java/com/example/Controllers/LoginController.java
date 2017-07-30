@@ -59,6 +59,8 @@ public class LoginController {
 	@RequestMapping("/registeract")
 	public ModelAndView createNewUser(@Valid user user, BindingResult bindingResult) {
 		ModelAndView modelAndView = new ModelAndView();
+		String rolee = user.getRoleselected();
+		logger.info(rolee);
 		user userExists = userService.findByEmail(user.getEmail());
 		if (userExists != null) {
 			bindingResult
@@ -70,7 +72,7 @@ public class LoginController {
 		} else {
 
 			try {
-				notificationService.sendNotificaitoin(user);
+			notificationService.sendNotificaitoin(user);
 			}catch( Exception e ){
 				// catch error
 				logger.info("Error Sending Email: " + e.getMessage());

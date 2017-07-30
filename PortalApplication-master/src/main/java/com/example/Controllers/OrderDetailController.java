@@ -7,6 +7,7 @@ import com.example.Services.UserServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -42,6 +43,7 @@ public class OrderDetailController {
     }
 
     //testing for custom queries
+    @PreAuthorize("hasAnyRole('admin')")
     @RequestMapping(value = "order/allordersdata")
      public String showorders(Model model){
         model.addAttribute("orderslist",orderDetailservice.findAllOrdsers());
@@ -51,6 +53,13 @@ public class OrderDetailController {
     public String editstatus(@PathVariable int id,Model model){
     model.addAttribute("orderlist",orderDetailservice.findById(id));
         return "order/editorder";
+    }
+
+
+    @RequestMapping("admin/delete/order/{id}")
+    public String delete(@PathVariable int id){
+        orderDetailservice.delete(id);
+        return "redirect:/products";
     }
 
 }

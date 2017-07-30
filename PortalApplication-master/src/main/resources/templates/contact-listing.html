@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  layout:decorator="layout/root_layout"
+><head>
+	<meta charset="UTF-8">
+	<title>Admin area</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"></head>
+<body>
+
+	<h2>User And Roles</h2>
+	<div class="container">
+		<div class="table-responsive" class="col-lg-10 col-md-6 col-sm-3" >
+			<div layout:fragment="page-content">
+
+	<table class="data-contacts-js table table-striped" >
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Roles</th>
+			<th>Email</th>
+			<th>Delete</th>
+			<th>Delete</th>
+
+			</th>
+	</table>
+
+	<button id="fetchContacts" >show users</button>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		/*$("#fetchContacts").bind("click", function() {
+*/
+        $(function() {
+
+
+            $.getJSON("http://localhost:8080/admin/users", function (data) {
+
+                $.each(data.userlist, function (i, contact) {
+                    $(".data-contacts-js").append(
+                        "<tr><td>" + contact.id + "</td>" +
+                        "<td>" + contact.name + "</td>" +
+                        "<td>" + contact.roles[0].role + "</td>" +
+                        "<td>" + contact.email + "</td>"+
+                        "<td>" + "<button id='test' onclick='myFunction("+contact.id+")' >"+ "Delete Users"+"</button>" + "</td>" +
+                        "<td><a href='user/delete/' "+contact.id+">"+"Delete Me" +"</a></td>"+
+
+                        "</tr>"
+					);
+					/* $.each(contact.roles[0], function(e,i) {
+                        "<tr><td>" + i+ "</td></tr>"+
+                        console.log('key:' + e + ' value:' + i);
+
+					});
+                    console.log(contact.roles[0].role);*/
+
+                    //$("#fetchContacts").click(myFunction());
+                });
+
+			});
+});
+
+        function myFunction(id) {
+
+            $.ajax({
+                url:'delete/user/'+id,
+                type:'DELETE',
+                success:function (feedback) {
+                    alert(" order deleted successfully");
+                    location.reload();
+                }
+            });
+        }
+	</script>
+
+
+</div></div></div>
+</body>
+</html>

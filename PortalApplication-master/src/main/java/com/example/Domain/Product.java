@@ -36,6 +36,7 @@ private Integer id;*/
     @JoinColumn(name="category_id")
     private Category category;
 
+
 /*
 
     @ManyToOne(cascade = CascadeType.REMOVE)
@@ -52,6 +53,17 @@ private Integer id;*/
         this.orderDetail = orderDetail;
     }
 */
+
+    @ManyToMany(cascade = CascadeType.ALL)
+/*
+    @JoinTable(
+            name = "book_author",
+            joinColumns = { @JoinColumn(name = "fk_p_id") },
+            inverseJoinColumns = { @JoinColumn(name = "fk_od_id") })
+*/
+    private Set<OrderDetail> orderDetails = new HashSet<OrderDetail>();
+
+
 
     @Transient
     private String selectedcategory;

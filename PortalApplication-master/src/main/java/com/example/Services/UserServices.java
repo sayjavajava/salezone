@@ -38,7 +38,7 @@ public class UserServices implements User_Service {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         user.setActive(1);
         System.out.println("the selected "+ user.getRoles());
-        Roles role = rolesRepository.findByRole("admin");
+        Roles role = rolesRepository.findByRole(user.getRoleselected());
         //user.setRole(new HashSet<Roles>(Arrays.asList(role)));
         user.setRoles(new HashSet<Roles>(Arrays.asList(role)));
         userRepository.save(user);
@@ -50,6 +50,9 @@ public List<user> findAllUsers(){
     return userRepository.findAll();
 }
 
+public void DeleteUser(int id){
+    userRepository.delete(id);
+}
 
 
 }

@@ -9,6 +9,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.Collection;
@@ -60,7 +61,11 @@ public class user extends AbstractPersistable<Integer> {
     private String lastName;
     @Column(name = "active")
     private int active;
-    @ManyToMany(cascade = CascadeType.ALL)
+
+    @Transient
+    private String roleselected;
+
+    @ManyToMany
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id",referencedColumnName="id"), inverseJoinColumns = @JoinColumn(name = "role_id",referencedColumnName="id"))
     private Set<Roles> roles;
 
@@ -106,6 +111,14 @@ public class user extends AbstractPersistable<Integer> {
 
     public int getActive() {
         return active;
+    }
+
+    public String getRoleselected() {
+        return roleselected;
+    }
+
+    public void setRoleselected(String roleselected) {
+        this.roleselected = roleselected;
     }
 
     public void setActive(int active) {

@@ -6,6 +6,7 @@
     // is chosen)
     $(document).ready(function() {
         $("#upload-file-submit").on("click", uploadFile);
+        $("#postBtn").on("click", uploadFile);
        // alert('hello');
     });
 
@@ -20,7 +21,6 @@ function uploadFile() {
         enctype: 'multipart/form-data',
         processData: false,
         contentType: false,
-        cache: false,
         success: function () {
             // Handle upload success
             $("#upload-file-message").text("File succesfully uploaded").addClass("alert alert-success");

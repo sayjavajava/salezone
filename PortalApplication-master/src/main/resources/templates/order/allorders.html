@@ -82,7 +82,7 @@
                     <th>Order_ID</th>
                     <th>Quantity</th>
                     <th>Price</th>
-
+                    <th>Delete Order</th>
                 </tr>
                 <tr  th:each="order: ${orderslist}">
 
@@ -90,7 +90,7 @@
                     <td th:text="${order.id}">Product Name</td>
                     <td th:text="${order.quantity}">descirption</td>
                     <td th:text="${order.price}">price</td>
-
+                    <td><a th:href="${'/order/delete/' + order.id}">Remove order</a></td>
                     <!--
                                         <td><a th:href="${'/order/edit/'+ order.id}">Edit</a></td>
 

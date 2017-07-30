@@ -23,19 +23,23 @@ public class ProductService  {
     @Autowired
     private OrderDetailservice orderDetailservice;
 
+
     public List<Product> findAll(){
     List<Product> list =  productDAO.findAll();
     return list;}
 
     public String save(Product product){
       // product.setOrderDetail(null);
+       // product.setImageUrl(product.getImageUrl()+"."+"jpg");
         productDAO.save(product);
         return "task-saved";
     }
     public String delete(int id){
 
+if(id !=0)
 
        productDAO.delete(id);
+
         return "task-deleted";
     }
 
