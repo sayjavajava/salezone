@@ -52,6 +52,19 @@ if(id !=0)
      List<Product> productList= productDAO.findProductByCategoryName(name);
     return productList;
     }
+
+    public Long countallproducts(){
+
+        return productDAO.count();
+    }
+    public List<Product> findByName(String name){
+        return productDAO.findProductByName(name);
+    }
+
+    public Product findBySingleName(String name){
+        Product list = productDAO.findByName(name);
+        return list;
+    }
 }
 
 

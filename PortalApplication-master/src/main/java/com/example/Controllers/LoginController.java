@@ -46,6 +46,8 @@ public class LoginController {
 		modelAndView.setViewName("login");
 		return "login";
 	}
+
+
 	@RequestMapping(value="/registration")
 	public String registration(Model model){
 		user user = new user();

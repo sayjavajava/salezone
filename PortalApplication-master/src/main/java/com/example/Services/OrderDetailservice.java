@@ -95,4 +95,7 @@ public void DeleteOrder(int id){
 
     orderDetailDAO.delete(id);
 }
+public Long countallorders(){
+    return orderDetailDAO.count();
+}
 }

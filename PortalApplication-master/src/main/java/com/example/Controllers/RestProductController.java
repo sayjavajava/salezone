@@ -1,6 +1,7 @@
 package com.example.Controllers;
 
 import com.example.Domain.*;
+import com.example.Helper.CountData;
 import com.example.Helper.UserInfo;
 import com.example.Services.*;
 import com.example.message.Response;
@@ -112,6 +113,14 @@ public class RestProductController {
         List<user> users = userServices.findAllUsers();
         return new ResponseEntity( new UserInfo( users, roles ), HttpStatus.OK );
     }
+
+
+    /*@RequestMapping(value = "productbynamerest/{name}")
+    public List<Product> findByName(@PathVariable ("name") String name){
+
+        return productService.findByName(name);
+
+    }*/
 
 
 }

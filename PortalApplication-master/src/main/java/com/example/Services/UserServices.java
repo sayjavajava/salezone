@@ -9,6 +9,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
@@ -53,6 +54,8 @@ public List<user> findAllUsers(){
 public void DeleteUser(int id){
     userRepository.delete(id);
 }
-
+public Long countAllUsers(){
+    return userRepository.count();
+}
 
 }

@@ -1,13 +1,11 @@
 package com.example.Controllers;
 
 import com.example.Domain.*;
+import com.example.Helper.CountData;
 import com.example.Helper.UserInfo;
 import com.example.Helper.UserOrder;
 import com.example.Repositories.UserFormBootstrapDAO;
-import com.example.Services.OrderDetailservice;
-import com.example.Services.RolesServices;
-import com.example.Services.UserFormService;
-import com.example.Services.UserServices;
+import com.example.Services.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -20,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -39,6 +38,10 @@ public class UserFormController {
 
     @Autowired
     private OrderDetailservice orderDetailservice;
+
+    @Autowired
+    private ProductService productService;
+
 
     @RequestMapping("userform/new")
     public String saverecord(Model model){
@@ -146,5 +149,18 @@ public ResponseEntity<List<OrderDetail>>  getCustomers() {
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
+
+    //Count All Entities
+    @RequestMapping("/graph")
+    public String graph(Model model)
+    {
+        model.addAttribute("countuser",userServices.countAllUsers());
+
+        model.addAttribute("countproducts",productService.countallproducts());
+
+        model.addAttribute("countorders",orderDetailservice.countallorders());
+
+        return "GraphPage" ;
+    }
 
 }

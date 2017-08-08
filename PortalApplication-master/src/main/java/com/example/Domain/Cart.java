@@ -24,27 +24,52 @@ public class Cart {
 
      private Map<Product ,Integer> contents = new HashMap<Product,Integer>();
 
+private List<Product> cartlist = new ArrayList<>();
+
+public void cartadd(Product product){
+
+      cartlist.add(product);
+
+      for (Product p :cartlist) {
+          logger.info(p.getName());
+          System.err.println(p.getId());
+          logger.info(p.getDescription());
+      }
+      }
+
      public Map<Product, Integer> getContents() {
          return contents;
      }
+
      public Set<Product> getProduct(){
       return contents.keySet();
 }
+
      public void addProduct(Product product){
-         if(contents.containsKey(product)){
+         //int count =contents.containsKey(product.getId()) ?contents.get(product.getId()):0;
+
+      Integer   count = contents.get(product);
+         //logger.info(count.toString());
+
+
+         logger.info("value of cart" +" " +count +" "+"id"+ product.getId());
+
+         if(contents.containsKey(product.getId())){
              contents.put(product,contents.get(product)+1);
 
-             logger.info("i am from existing");
+             logger.info("i am  existing");
        }else {
              logger.info("i am new one ");
              contents.put(product,1);
-             System.err.println("product-cart"+product.getName() + product.getId());
+//             System.err.println("product-cart"+product.getName() + product.getId()+product.getImageUrl()+product.getDescription()+product.getPrice()+product.getCategory());
 
              }
-
        //contents.computeIfPresent(product,(k,v)->v+1);
-         System.err.println("product-contains"+contents.containsKey(product));
+    System.err.println("product-contains"+testkey(product));
 
+}
+private boolean testkey(Object object){
+         return this.contents.containsKey(object);
 }
 
 

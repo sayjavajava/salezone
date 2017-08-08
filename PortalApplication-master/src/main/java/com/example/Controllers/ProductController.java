@@ -61,12 +61,87 @@ private final org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass())
         return "admin/addproductviaajax" ;
     }
 
+
     @RequestMapping("/addproductviaajax")
     public String addProductViaAjax(Model model)
     {
         //model.addAttribute("product",new Product());
         return "admin/addproductviaajax" ;
     }
+
+
+    @RequestMapping("/clothhome")
+    public String testgraph(Model model)
+    {
+        //model.addAttribute("product",new Product());
+
+        return "cloth/clothhome" ;
+    }
+
+    @RequestMapping("/dresses")
+    public String dresses(Model model)
+    {
+        //model.addAttribute("product",new Product());
+
+        return "cloth/dresses" ;
+    }
+
+    @RequestMapping("/about")
+    public String about(Model model)
+    {
+        //model.addAttribute("product",new Product());
+
+        return "cloth/about" ;
+    }
+    @RequestMapping("/clothproducts")
+    public String clothproduct()
+    {
+        //model.addAttribute("product",new Product());
+
+        return "cloth/clothproducts" ;
+    }
+    @RequestMapping("/checkout")
+    public String checkout(Model model)
+    {
+        return "cloth/checkout" ;
+    }
+    @RequestMapping("/mail")
+    public String mail()
+    {
+        return "cloth/mail" ;
+    }
+    @RequestMapping("/faq")
+    public String faq()
+    {
+        return "cloth/faq" ;
+    }
+    @RequestMapping("/shirts")
+    public String shirt()
+    {
+        return "cloth/shirts" ;
+    }
+    @RequestMapping("/jeans")
+    public String jeans()
+    {
+        return "cloth/jeans" ;
+    }
+    @RequestMapping("/sarees")
+    public String sarees()
+    {return "cloth/sarees" ;}
+    @RequestMapping("/single")
+    public String single()
+    {return "cloth/single" ;}
+    @RequestMapping("/sandals")
+    public String sandals()
+    {return "cloth/sandals" ;}
+    @RequestMapping("/skirts")
+    public String skirts()
+    {return "cloth/skirts" ;}
+    @RequestMapping("/salwars")
+    public String salwars()
+    {return "cloth/salwars" ;}
+
+
 
     @RequestMapping(value = "/products")
     public String list(Model model){
@@ -80,6 +155,13 @@ private final org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass())
         model.addAttribute("product",productService.findById(id));
         return "productshow";
     }
+
+    @RequestMapping(value = "productbyname/{name}")
+    public String findByName(@PathVariable ("name") String name, Model model){
+        model.addAttribute("productname",productService.findByName(name));
+        return "cloth/clothhome";
+    }
+
     @Async
     @RequestMapping("product/new")
     public String saverecord(Model model){
@@ -118,6 +200,15 @@ public String AddProduct(@PathVariable("productid") Integer productid,@RequestHe
     cart.addProduct(product);
     return "redirect:"+refredfrom;
 }
+
+    @RequestMapping(value = "/product/cart/test/{productname}")
+    public String findbyname(@PathVariable("productname") String productname,@RequestHeader("referer") String refredfrom ){
+        Product product = productService.findBySingleName(productname);
+
+//cart.cartadd(product);
+       cart.addProduct(product);
+        return "redirect:"+refredfrom;
+    }
 //delete cart
 @RequestMapping("/product/deletecart/{productid}")
 public String DeleteProduct(@PathVariable("productid") Integer productid,@RequestHeader("referer") String refredfrom ){
@@ -141,16 +232,20 @@ public String DeleteProduct(@PathVariable("productid") Integer productid,@Reques
      ModelAndView modelAndView = new ModelAndView();
      Authentication auth = SecurityContextHolder.getContext().getAuthentication();
      user user = userService.findByEmail(auth.getName());
+
      modelAndView.setViewName("redirect:/product/cart");
       int loggedinuser = user.getId();
       System.err.println("user logged "+loggedinuser);
      if(cart.getCartSize() !=0) {
          redirectAttributes.addAttribute("message" + user.getEmail() + cart.getContents().entrySet());
          //logger.info("waqas"+user.getEmail());
-         orderDetailservice.palaceorder(cart.getContents(), user);
-         redirectAttributes.addFlashAttribute("orderstatus","order has been  palaced");
+         if(user != null) {
+             orderDetailservice.palaceorder(cart.getContents(), user);
+             redirectAttributes.addFlashAttribute("orderstatus", "order has been  palaced");
+         } else{ redirectAttributes.addFlashAttribute("orderstatus","Please Log in First");}
          return modelAndView;
      }
+
      redirectAttributes.addFlashAttribute("orderstatus","Please add items to cart");
    return modelAndView;
  }

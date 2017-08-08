@@ -1,4 +1,4 @@
 ---
 applications:
-- name: portalsale
+- name: portalsalezone
   path: target/portalapplication-0.0.1-SNAPSHOT.jar
