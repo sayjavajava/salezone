@@ -44,7 +44,7 @@ public class OrderDetailController {
 
     //testing for custom queries
     @PreAuthorize("hasAnyRole('admin')")
-    @RequestMapping(value = "order/allordersdata")
+    @RequestMapping(value = "admin/order/allordersdata")
      public String showorders(Model model){
         model.addAttribute("orderslist",orderDetailservice.findAllOrdsers());
         return "order/allorders";

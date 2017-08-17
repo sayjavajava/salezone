@@ -241,10 +241,10 @@
 
 
                                     <li><a th:href="@{/products}"><i class="fa fa-file"></i> <span>All Products</span></a></li>
-                                    <li><a href="#" th:href="@{'/orders'}"><i class="fa fa-cart-arrow-down"></i> <span>Orders</span></a></li>
+                                    <li><a th:href="@{/admin/order/allordersdata}"><i class="fa fa-cart-arrow-down"></i> <span>Orders</span></a></li>
                                     <li><a href="#" th:href="@{'/admin/customerorders'}"><i class="fa fa-smile-o"></i> <span>Customers</span></a></li>
 
-                <li><a th:href="@{/order/allordersdata}" ><i class="fa fa-smile-o"></i><span> Order Detail</span></a></li><br></br>
+                <li><a th:href="@{/admin/order/allordersdata}" ><i class="fa fa-smile-o"></i><span> Order Detail</span></a></li><br></br>
                             <li><a  th:href="@{'/admin/userandroles'}"><i class="fa fa-users"></i> Users</a></li><br></br>
                             <li><a href="#" th:href="@{'/roles'}"><i class="fa fa-user"></i> Roles</a></li>
                            
@@ -252,9 +252,9 @@
 
                 </li>
                 <div layout:fragment="order-detail">
-                     <li><a th:href="@{/order/allordersdata}" ><i class="fa fa-smile-o"></i><span> Order Detail</span></a></li><br></br>
+                     <li><a th:href="@{/admin/order/allordersdata}" ><i class="fa fa-smile-o"></i><span> Order Detail</span></a></li><br></br>
                                 <li><a href="#" th:href="@{'/admin/userandroles'}"><i class="fa fa-users"></i> Users</a></li><br></br>
-                                <li><a href="#" th:href="@{'/roles'}"><i class="fa fa-user"></i> Roles</a></li>
+                                <li><a href="#" th:href="@{'/admin/graph'}"><i class="fa fa-user"></i> Activity</a></li>
 
                 </div>
                 <!--<li class="treeview active">

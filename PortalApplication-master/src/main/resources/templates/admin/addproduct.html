@@ -79,8 +79,11 @@ function myClick() {
                             </div>
                             <div class="form-group">
                                 <label>File input</label>
-                                <input id="upload-file-input" type="file" name="uploadfile" accept="*" />
+                                <input id="upload-file-input" type="file" name="uploadfile"   accept="*" multiple /></br>
+                                <input id="upload-file-input" type="file" name="uploadfile"   accept="*" multiple />
                                 <p class="help-block">choose image for product(.jpeg,png etc)</p>
+
+
                             </div>
 
                         </div>
@@ -96,5 +99,35 @@ function myClick() {
         </div></section>
 
 </div>
+
+<!--
+<div>
+    <div>Uploaded files:</div>
+    <#list files as file>
+        <div>
+            ${file.getName()}
+        </div>
+    </#list>
+</div>
+<script>
+    function updateFiles() {
+        var nBytes = 0,
+            fileInfo = '',
+            oFiles = document.getElementById("upload-file-input").files,
+            nFiles = oFiles.length;
+        for (var nFileId = 0; nFileId < nFiles; nFileId++) {
+            fileInfo += 'Filename=';
+            fileInfo += oFiles[nFileId].name;
+            fileInfo +=', size=';
+            fileInfo += oFiles[nFileId].size;
+            fileInfo +=' bytes';
+            fileInfo +='</br>';
+        }
+
+        document.getElementById("selectedFiles").innerHTML = fileInfo;
+
+    }
+</script>
+-->
 </body>
 </html>

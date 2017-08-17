@@ -103,7 +103,8 @@ private final org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass())
     @RequestMapping("/checkout")
     public String checkout(Model model)
     {
-        return "cloth/checkout" ;
+        model.addAttribute(cart);
+        return "checkout" ;
     }
     @RequestMapping("/mail")
     public String mail()
@@ -140,6 +141,10 @@ private final org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass())
     @RequestMapping("/salwars")
     public String salwars()
     {return "cloth/salwars" ;}
+    @RequestMapping("/tryme")
+    public String tryme()
+    {return "cloth/tryme" ;}
+
 
 
 
@@ -149,6 +154,7 @@ private final org.slf4j.Logger logger = LoggerFactory.getLogger(this.getClass())
          model.addAttribute("products", productslist);
         return "products";
     }
+
 
     @RequestMapping(value = "/product/{id}")
     public String findById(@PathVariable int id, Model model){
@@ -259,7 +265,11 @@ public String loadFile(){
     public ResponseEntity<?> uploadFile(
             @RequestParam("uploadfile") MultipartFile uploadfile) {
 
+         final String uploadDir = System.getProperty("netgloo.paths.uploadedFiles") ;
+
+
         try {
+
 
             String filename = uploadfile.getOriginalFilename();
             String directory = environment.getProperty("netgloo.paths.uploadedFiles");

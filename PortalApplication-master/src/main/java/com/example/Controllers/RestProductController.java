@@ -77,7 +77,7 @@ public class RestProductController {
     }
     @RequestMapping(value = "/saveproduct", method = RequestMethod.POST)
     @ResponseBody public ResponseEntity<?> postForm(@RequestBody Product data) {
-   System.err.println(data);
+     System.err.println(data);
 
         return new ResponseEntity<String>("Offer Created", HttpStatus.OK);
     }

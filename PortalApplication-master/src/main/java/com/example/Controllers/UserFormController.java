@@ -151,7 +151,7 @@ public ResponseEntity<List<OrderDetail>>  getCustomers() {
 
 
     //Count All Entities
-    @RequestMapping("/graph")
+    @RequestMapping("/admin/graph")
     public String graph(Model model)
     {
         model.addAttribute("countuser",userServices.countAllUsers());

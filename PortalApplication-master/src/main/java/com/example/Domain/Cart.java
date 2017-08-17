@@ -51,7 +51,6 @@ public void cartadd(Product product){
       Integer   count = contents.get(product);
          //logger.info(count.toString());
 
-
          logger.info("value of cart" +" " +count +" "+"id"+ product.getId());
 
          if(contents.containsKey(product.getId())){
@@ -74,13 +73,7 @@ private boolean testkey(Object object){
 
 
     public  void remove(Product p ){
-         /*for(Product key:contents.keySet()){
-         System.err.println("key"+key.getId());
-             if(key.getId().equals(id)){
-                 contents.remove(key.getId());
-                 logger.info("exist"+key.getId());
-             }
-         }*/
+
         for(Iterator<Map.Entry<Product,Integer>>it=contents.entrySet().iterator();it.hasNext();){
             Map.Entry<Product, Integer> entry = it.next();
             if (entry.getKey().getId().equals(p.getId()) ) {
