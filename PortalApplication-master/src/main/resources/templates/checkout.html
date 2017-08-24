@@ -97,7 +97,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <h6>Clothing</h6>
                                         <li><a href="dresses">Dresses<span>New</span></a></li>
                                         <li><a href="clothproducts">Cosmetic $ Cloths</a></li>
-                                        <li><a href="skirts.html">Shorts & Skirts</a></li>
+                                        <li><a href="skirts">Shorts & Skirts</a></li>
                                         <li><a href="jeans">Jeans</a></li>
                                         <li><a href="shirts">Shirts & Tops<span>New</span></a></li>
                                     </ul>
@@ -116,7 +116,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         <h6>Foot Wear</h6>
                                         <li><a href="sandals.html">Flats</a></li>
                                         <li><a href="sandals">Sandals</a></li>
-                                        <li><a href="sandals.html">Boots</a></li>
+                                        <li><a href="sandals">Boots</a></li>
                                         <li><a href="sandals.html">Heels</a></li>
                                     </ul>
                                 </div>
@@ -161,8 +161,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <tr>
                     <th>Product Name</th>
                     <th>Product Image</th>
-                    <th>Quality</th>
-                    <th>Product Name</th>
+                    <th>Quantity</th>
+
                     <th>Price</th>
                     <th>Remove</th>
 
@@ -182,7 +182,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                 <tr  th:each="product: ${cart.contents}" class="rem2">
                     <td class="invert" th:text="${product.key.name}"></td>
-                    <td><img src="../../resources/static/*" th:src="@{${product.key.ImageUrl}}" class="img-responsive"/></td>
+                    <td><img src="../../static/*"
+                             th:src="@{'/cloth/'+${product.key.ImageUrl}}" /></td>
                     <td class="invert">
                         <div class="quantity">
                             <div class="quantity-select">
@@ -192,7 +193,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                         </div>
                     </td>
-                    <td class="invert">Floral Border Skirt</td>
+
                     <td th:text="${product.key.price * product.value}"></td>
 <td><a th:href="${'/product/deletecart/' + product.key.id}"><div class="rem"><div class="close2"> </div></div></a></td>
 
@@ -230,6 +231,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <span style="color: red" th:text="${cart.CartSize}"></span></div>
                         </div>
                     </th:block>
+
+                <div align="left"><a th:href="@{/product/custominfo}" ><button type="button" class="btn btn-primary"> palace order</button></a></div><br/>
+                <span style="background-color: red" th:utext="${orderstatus}"></span>
+                <span style="background-color: red" th:utext="${formerror}"></span>
+                <span style="background-color:blueviolet" th:utext="${message}"></span>
+            </div>
+            <br>
 
                 <a href="/clothhome"> <button type="button" class="btn btn-danger" > Continue Shopping</button></a>
 

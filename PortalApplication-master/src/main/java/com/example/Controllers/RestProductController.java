@@ -41,7 +41,7 @@ public class RestProductController {
      org.springframework.core.env.Environment environment;
 
     @Autowired
-    private CategoryService categoryService;
+    private CategoryService  categoryService;
 
     @RequestMapping(value = "productrest/{id}" , method = RequestMethod.GET)
     public @ResponseBody
@@ -106,6 +106,26 @@ public class RestProductController {
         return response;
     }
 
+    @RequestMapping(value = "/androidpost", method = RequestMethod.POST)
+    public ResponseEntity<AndroidAddress> update(@RequestBody AndroidAddress androidaddress) {
+
+        if (androidaddress != null) {
+            androidaddress.setPhnumber(androidaddress.getPhnumber() + 100);
+        }
+
+        // TODO: call persistence layer to update
+        return new ResponseEntity<AndroidAddress>(androidaddress, HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/androidget")
+    public ResponseEntity<AndroidAddress> get() {
+
+        AndroidAddress androidaddress = new AndroidAddress();
+        androidaddress.setName("Blue");
+        androidaddress.setCity("lahore");
+
+        return new ResponseEntity<AndroidAddress>(androidaddress, HttpStatus.OK);
+    }
 
     @RequestMapping(path = "/getusersdata", method = RequestMethod.GET)
     public ResponseEntity get_data_on_login() throws Exception {
@@ -121,7 +141,7 @@ public class RestProductController {
         return productService.findByName(name);
 
     }*/
-
+//edit admin/user/edit/{id}
 
 }
 

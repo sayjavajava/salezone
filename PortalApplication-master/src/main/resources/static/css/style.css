@@ -143,6 +143,47 @@ label.icon-search span {
     color: #BEBEBE;
 }
 /*--//search--*/
+.dynamic-data {
+    text-align: center;
+    line-height: 0px;
+}
+table.dynamic-data h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f0ad4e;
+    text-transform: uppercase;
+}
+table.dynamic-data span {
+    font-weight: bold;
+    color: #f0ad4e;
+}
+table.hole-table {
+    display: table;
+}
+table.hole-table > tbody > tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+    border: 2px solid #fff;
+    float: left;
+    width: 48%;
+}
+.rem2 img {
+    width: 10%;
+}
+table.hole-table > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+    width: 48%;
+    border: 2px solid #fff;
+    float: left;
+}
+.dynamic-data .thumbnail {
+    width: 50%;
+    margin: 0 auto;
+}
+table.dynamic-data i.item_price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
 .box_1 {
 	float: right;
 	margin-top: 18px;
@@ -1306,7 +1347,39 @@ h2.resp-accordion {
     font-size: 1.5em;
     color: #212121;
     padding-left: 1.5em;
+    text-align: center;
 }
+#female-model {
+    position: absolute;
+    top: 20%;
+    color: #333;
+    left: 23%;
+    font-size: 22px;
+}
+#male-model {
+    position: absolute;
+    top: 20%;
+    color: #333;
+    right: 29%;
+    font-size: 22px;
+}
+.form-group {
+    width: 50%;
+    margin: 15px auto;
+}
+.box-footer {
+    text-align: center;
+}
+.login-btn {
+    float: right;
+    clear: both;
+    margin: 20px 0;
+}
+.login-btn form {float: right;
+    margin: 0;
+    padding: 0 0 0 5px;}
+form.log-out {    float: right;
+    clear: both;}
 .register input[type="text"],.register input[type="email"],.register input[type="password"]{
 	outline:none;
 	border:1px solid #DFDFDF;
@@ -4316,4 +4389,53 @@ td.invert-image a img {
 	.close1, .close2, .close3 {
 		right: 111px;
 	}
+
+
+
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }

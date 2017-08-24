@@ -57,5 +57,8 @@ public void DeleteUser(int id){
 public Long countAllUsers(){
     return userRepository.count();
 }
+public user findone(int id){
+return userRepository.findOne(id);
+}
 
 }

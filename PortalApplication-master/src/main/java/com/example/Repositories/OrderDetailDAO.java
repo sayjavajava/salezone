@@ -16,7 +16,7 @@ import java.util.*;
  * Created by waqas on 13/03/2017.
  */
 @Repository
-public interface OrderDetailDAO extends PagingAndSortingRepository<OrderDetail,Integer>,JpaRepository<OrderDetail,Integer> {
+public interface OrderDetailDAO extends JpaRepository<OrderDetail, Integer> {
 /*
     final static String product_ordered = "select p from OrderDetail p inner join order_detail_productlist ur on(p.id=ur.order_detail_id) where p.id= :id ";
 
@@ -25,6 +25,10 @@ public interface OrderDetailDAO extends PagingAndSortingRepository<OrderDetail,I
 List<OrderDetail> findAll();
 
 List<OrderDetail> findByProductlistId(int id);
+
+//List<user> findBypurchasedBy(int id);
+@Query("select od from OrderDetail od where od.PurchasedBy.id = ?1")
+List<OrderDetail> findByPurchasedBy(Integer userId);
 
 
 

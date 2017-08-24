@@ -46,7 +46,8 @@
                         "<td>" + contact.roles[0].role + "</td>" +
                         "<td>" + contact.email + "</td>"+
                         "<td>" + "<button id='test' onclick='myFunction("+contact.id+")' >"+ "Delete Users"+"</button>" + "</td>" +
-                        "<td><a href='user/delete/' "+contact.id+">"+"Delete Me" +"</a></td>"+
+                        "<td>" + "<button id='edittest' onclick='EditFunction("+contact.id+")' >"+ "Change Role"+"</button>" + "</td>" +
+                        "<td>"+"<a href=user/edit/ "+ contact.id+ ">"+"Edit Role" +"</a></td>"+
 
                         "</tr>"
 					);
@@ -70,6 +71,18 @@
                 type:'DELETE',
                 success:function (feedback) {
                     alert(" order deleted successfully");
+                    location.reload();
+                }
+            });
+        }
+
+        function EditFunction(id) {
+
+            $.ajax({
+                url:'user/edit/'+id,
+                type:'POST',
+                success:function (feedback) {
+                    alert(" Data Updated successfully");
                     location.reload();
                 }
             });

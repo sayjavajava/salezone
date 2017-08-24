@@ -1,15 +1,19 @@
 package com.example.Controllers;
 
 import com.example.Domain.*;
+import com.example.Domain.UserForm;
 import com.example.Helper.CountData;
 import com.example.Helper.UserInfo;
 import com.example.Helper.UserOrder;
 import com.example.Repositories.UserFormBootstrapDAO;
 import com.example.Services.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,6 +23,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -42,6 +47,8 @@ public class UserFormController {
     @Autowired
     private ProductService productService;
 
+    @Autowired
+    private Contactservices contactservices;
 
     @RequestMapping("userform/new")
     public String saverecord(Model model){
@@ -69,6 +76,36 @@ public class UserFormController {
     }
 
 
+    @RequestMapping("/contactsave")
+    public String ContactSave(Contact contact){
+
+        contactservices.saveContact(contact);
+
+        return "cloth/clothhome";
+    }
+
+
+    @RequestMapping("/mail")
+    public String mail(Model model)
+    {
+        model.addAttribute("contactmail", new Contact());
+        return "cloth/mail" ;
+    }
+    @RequestMapping("/admin/messages")
+    public String AllMessages(Model model)
+    {
+        List<Contact> listmessage = new ArrayList<Contact>();
+
+      Iterable <Contact> allmessages = contactservices.allmessages();
+
+      allmessages.forEach(listmessage ::add);
+
+      model.addAttribute("contactmail", listmessage);
+
+        return "messages" ;
+    }
+
+
     @RequestMapping(value = "/guests/{surname}", method = RequestMethod.GET)
     public String showGuestList(Model model, @PathVariable("surname") String surname) {
         model.addAttribute("guests",userFormService.findByLastName(surname));
@@ -83,12 +120,6 @@ public class UserFormController {
         return "results :: resultsList";
     }
 
-    /*@RequestMapping(value = "/allusers", method = RequestMethod.GET)
-    public String showGuestList() {
-        userServices.findAllUsers();
-        return "results :: resultsList";
-    }*/
-
 
     @RequestMapping(value = "admin/users",
             produces = { MediaType.APPLICATION_JSON_VALUE },
@@ -97,7 +128,6 @@ public class UserFormController {
     public ResponseEntity<List<UserInfo>>  getContacts() {
        List<Roles> roles = rolesServices.allroles();
         List<user> users = userServices.findAllUsers();
-        //return new ResponseEntity( users , HttpStatus.OK );
         return new ResponseEntity (new UserInfo( users,roles) , HttpStatus.OK );
     }
 
@@ -108,7 +138,7 @@ public class UserFormController {
         return "contact-listing";
     }
 
-//for customer and orders data
+
 @RequestMapping(value = "admin/customers",
         produces = { MediaType.APPLICATION_JSON_VALUE },
         method = RequestMethod.GET)
@@ -120,6 +150,7 @@ public ResponseEntity<List<OrderDetail>>  getCustomers() {
 //    return new ResponseEntity (new UserOrder(orderDetails,users) , HttpStatus.OK );
     return new ResponseEntity <List<OrderDetail>> (orderDetails, HttpStatus.OK );
     }
+
     @RequestMapping(value="admin/customerorders", produces = {
             MediaType.TEXT_HTML_VALUE},
             method = RequestMethod.GET)
@@ -138,8 +169,6 @@ public ResponseEntity<List<OrderDetail>>  getCustomers() {
 
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
-
-//Delete user
 
 
     @RequestMapping(value = "admin/delete/user/{id}", method = RequestMethod.DELETE)
@@ -163,4 +192,37 @@ public ResponseEntity<List<OrderDetail>>  getCustomers() {
         return "GraphPage" ;
     }
 
+
+
+    @RequestMapping(value = "/customerhistory",
+            produces = { MediaType.APPLICATION_JSON_VALUE },
+            method = RequestMethod.GET)
+    @ResponseBody
+    public ResponseEntity<List<OrderDetail>>  getAccountData() {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        user user = userServices.findByEmail(auth.getName());
+        int id = user.getId();
+       System.err.println("current user "+id);
+        List<OrderDetail> orderDetails =orderDetailservice.findByPurchasedBy(id);
+
+        return new ResponseEntity <List<OrderDetail>> (orderDetails, HttpStatus.OK );
+    }
+
+    @RequestMapping(value = "customeraccount/{id}" , method = RequestMethod.GET)
+    public @ResponseBody List<OrderDetail> orderrestonebyone(@PathVariable int id) {
+        List<OrderDetail> products =orderDetailservice.findByPurchasedBy(id) ;
+        return products;
+    }
+
+    @RequestMapping("/customeraccounthistory")
+    public String searchonmale(Model model){
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        user user = userServices.findByEmail(auth.getName());
+        int id = user.getId();
+        System.err.println("current user "+id);
+        List<OrderDetail> orderDetails =orderDetailservice.findByPurchasedBy(id);
+model.addAttribute("history",orderDetails);
+        return "customerhistory";
+    }
+    //edit admin/user/edit/{id}
 }

@@ -40,7 +40,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a th:href="@{/products}" class="logo">
+        <a th:href="@{/admin/products}" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>A</b>LT</span>
             <!-- logo for regular state and mobile devices -->
@@ -213,7 +213,7 @@
                 </div>
             </div>
             <!-- search form -->
-            <form action="#" method="get" class="sidebar-form">
+         <!--   <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Search...">
                     <span class="input-group-btn">
@@ -222,41 +222,37 @@
               </span>
                 </div>
             </form>
-            <!-- /.search form -->
+-->            <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
-                <li class="header">MAIN NAVIGATION</li>
+                <li class="header">All Admin Actions</li>
                 <li class="treeview">
-                    <a th:href="@{/products}">
+                    <a th:href="@{/admin/products}">
                         <i class="fa fa-dashboard"></i> <span>Home</span>
                         <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
                     </a>
 
-                        <li><a th:href="@{/test}" ><i class="fa fa-circle-o"></i> Add Product Via ajax</a></li>
+                        <li><a th:href="@{/admin/test}" ><i class="fa fa-circle-o"></i> Add Product Via ajax</a></li>
                         <li><a th:href="@{/product/new}" ><i class="fa fa-circle-o"></i> Add product</a></li>
-
-
-
-
-                                    <li><a th:href="@{/products}"><i class="fa fa-file"></i> <span>All Products</span></a></li>
+                            <li><a th:href="@{/admin/products}"><i class="fa fa-file"></i> <span>All Products</span></a></li>
                                     <li><a th:href="@{/admin/order/allordersdata}"><i class="fa fa-cart-arrow-down"></i> <span>Orders</span></a></li>
                                     <li><a href="#" th:href="@{'/admin/customerorders'}"><i class="fa fa-smile-o"></i> <span>Customers</span></a></li>
 
-                <li><a th:href="@{/admin/order/allordersdata}" ><i class="fa fa-smile-o"></i><span> Order Detail</span></a></li><br></br>
+                <li><a th:href="@{/admin/messages}" ><i class="fa fa-smile-o"></i><span>User Messsages</span></a></li><br></br>
                             <li><a  th:href="@{'/admin/userandroles'}"><i class="fa fa-users"></i> Users</a></li><br></br>
-                            <li><a href="#" th:href="@{'/roles'}"><i class="fa fa-user"></i> Roles</a></li>
-                           
+                            <li><a  th:href="@{'/roles'}"><i class="fa fa-user"></i> Roles</a></li>
+                               <li><a href="#" th:href="@{'/admin/graph'}"><i class="fa fa-user"></i> Activity</a></li>
 
 
                 </li>
-                <div layout:fragment="order-detail">
+  <!--              <div layout:fragment="order-detail">
                      <li><a th:href="@{/admin/order/allordersdata}" ><i class="fa fa-smile-o"></i><span> Order Detail</span></a></li><br></br>
                                 <li><a href="#" th:href="@{'/admin/userandroles'}"><i class="fa fa-users"></i> Users</a></li><br></br>
                                 <li><a href="#" th:href="@{'/admin/graph'}"><i class="fa fa-user"></i> Activity</a></li>
 
-                </div>
+                </div>-->
                 <!--<li class="treeview active">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
@@ -431,7 +427,7 @@
                 <!--<small>Blank example to the fixed layout</small>-->
             </h3></div>
             <ol class="breadcrumb " style="margin-right: 10px">
-               <li> <a th:href="@{/product/cart}"><button class="btn btn-success "><span class="glyphicon glyphicon-shopping-cart"></span> <span class="items">Cart</span></button></a>
+               <li> <a th:href="@{/checkout}"><button class="btn btn-success "><span class="glyphicon glyphicon-shopping-cart"></span> <span class="items">Cart</span></button></a>
                </li><li> <form th:action="@{/logout}" method="get">
                     <button class="btn btn-md btn-danger btn-block" name="registration"
                             type="Submit">Logout</button>

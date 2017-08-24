@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>salezone</title>
+    <!-- for-mobile-apps -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Women's Fashion Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <!--   <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+       <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+       <link href="css/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+       <link rel="stylesheet" href="css/jquery.countdown.css" />
+   -->
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/clothcss/bootstrap.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/clothcss/fasthover.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/clothcss/jquery.countdown.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/clothcss/popuo-box.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/clothcss/flexslider.css}" />
+    <!-- js -->
+    <!--
+    <script src="js/jquery.min.js"></script>
+
+
+    <script src="js/simpleCart.min.js"></script>
+    &lt;!&ndash; cart &ndash;&gt;
+    &lt;!&ndash; for bootstrap working &ndash;&gt;
+    <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>-->
+
+
+    <script th:src="@{/js/clothjs/jquery.min.js}"></script>
+    <script th:src="@{/js/clothjs/simpleCart.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/clothjs/bootstrap-3.1.1.min.js}"></script>
+
+    <!-- //js -->
+    <!-- countdown -->
+    <!-- //countdown -->
+    <!-- cart -->
+    <!-- //for bootstrap working -->
+    <link href='//fonts.googleapis.com/css?family=Glegoo:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+
+
+
+    <script th:inline="javascript" type="text/javascript">
+        function myFunction() {
+            // Declare variables
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .left-col img { width: 35%; float: left; margin: 0 45px;}
+
+        .right-col img { width: 35%; margin: 0 45px;}
+        .model-select {
+            width: 100%;
+            margin: 60px 60px;}
+
+    </style>
+</head>
+
+<body>
+<!-- header -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Model Dressing Room</h4>
+            </div>
+            <div class="model-select">
+
+                <div class="left-col">
+                    <span id="female-model">Female</span>
+                    <a th:href="@{/femaledressingroom}">
+                        <img src="../../static/cloth/girl-room.jpg"
+                             th:src="@{/cloth/girl-room.jpg}"  alt="" class="img-responsive"/>
+                    </a>
+                </div>
+                <div class="right-col">
+                    <span id="male-model">Male</span>
+                    <a th:href="@{/maledressingroom}">
+                        <img src="../../static/cloth/boy-room.jpg"
+                             th:src="@{/cloth/boy-room.jpg}"  alt="" class="img-responsive"/>
+                    </a>
+                </div>
+
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+<script>
+    /*  $('#myModal').modal('show');*/
+</script>
+<div class="header">
+    <div class="container">
+
+        <div class="w3l_logo">
+            <h1><a href="index.html"><h1><a href="index.html">Online Store<span>Application</span></a></h1></a></h1>
+        </div>
+
+
+        <div class="cart box_1">
+
+            <a th:href="@{/checkout}">
+                <img src="https://png.icons8.com/shopping-cart/color/24"  width="48" height="48"><strong>Items</strong></a>
+
+        </div>
+        <div class="login-btn">
+            <a th:href="@{/login}"><button class="btn btn-md btn-primary">Login</button></a>
+
+            <a th:href="@{/admin/products}"><button class="btn btn-md btn-primary">Admin Panel</button></a>
+            <form th:action="@{/registration}" method="get">
+                <button class="btn btn-md btn-warning btn-block" type="Submit">Create Account</button>
+            </form>
+
+        </div>
+
+
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="navigation">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="clothhome" class="act">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Clothing</h6>
+                                        <li><a href="dresses">Dresses<span>New</span></a></li>
+                                        <li><a href="skirts">Shorts & Skirts</a></li>
+                                        <li><a href="dresses">Jeans</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Ethnic Wear</h6>
+                                        <li><a th:href="@{single}">Single</a></li>
+                                        <li><a th:href="@{dresses}"><i>Summer Store</i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="w3ls_products_pos">
+                                        <h4>50%<i>Off/-</i></h4>
+                                        <img src="../../static/cloth/1.jpg"
+                                             th:src="@{/cloth/1.jpg}"  alt="" class="img-responsive"/>
+
+
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a th:href="@{/about}">About Us</a></li>
+
+                    <li><a href="mail.html">Contact Us</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- //header -->
+<!-- banner -->
+
+<!-- //banner -->
+
+<!-- banner-bottom -->
+<div class="banner-bottom">
+    <div class="container">
+        <div class="col-md-5 wthree_banner_bottom_left">
+
+
+            <script type="text/javascript" th:src="@{/js/clothjs/jquery.magnific-popup.js}"></script>
+
+            <!--//pop-up-box -->
+
+            <script>
+                $(document).ready(function() {
+                    $('.popup-with-zoom-anim').magnificPopup({
+                        type: 'inline',
+                        fixedContentPos: false,
+                        fixedBgPos: true,
+                        overflowY: 'auto',
+                        closeBtnInside: true,
+                        preloader: false,
+                        midClick: true,
+                        removalDelay: 300,
+                        mainClass: 'my-mfp-zoom-in'
+                    });
+
+                });
+            </script>
+        </div>
+
+
+
+
+        <div th:if="${not #lists.isEmpty(history)}">
+
+
+
+            <!--<div align="right"><a th:href="@{/UserDetail/Order/testusers}" ><button type="button" class="btn btn-primary"> Order Listt</button></a></div>-->
+            <div align="right" style="margin-right: 5px;"><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Product name.."/></div>
+            <br/>
+            <table id="myTable" class="table table-striped" >
+                <tr>
+
+                    <th>Product Name</th>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>quantity</th>
+
+
+                </tr>
+                <tr  th:each="product: ${history}">
+
+                    <td th:text="${product.user.email}">descirption</td>
+                    <td th:text="${product.productlist[0].name}">descirption</td>
+                    <td th:text="${product.price}">price</td>
+                    <td th:text="${product.quantity}">price</td>
+                   <!-- <td><img src="../../static/*"
+                             th:src="@{'/cloth/'+${product.productlist[0].imageUrl}}" class="thumbnail"/></td>-->
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

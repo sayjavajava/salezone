@@ -24,9 +24,9 @@ public class Cart {
 
      private Map<Product ,Integer> contents = new HashMap<Product,Integer>();
 
-private List<Product> cartlist = new ArrayList<>();
+     private List<Product> cartlist = new ArrayList<>();
 
-public void cartadd(Product product){
+     public void cartadd(Product product){
 
       cartlist.add(product);
 

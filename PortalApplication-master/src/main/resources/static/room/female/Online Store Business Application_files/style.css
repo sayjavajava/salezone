@@ -1,0 +1,3268 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+#metail-mondo-app,
+.metail-dialog {
+  -webkit-align-content: initial;
+  -ms-flex-line-pack: initial;
+  align-content: initial;
+  -webkit-box-align: initial;
+  -webkit-align-items: initial;
+  -ms-flex-align: initial;
+  -ms-grid-row-align: initial;
+  align-items: initial;
+  -webkit-align-self: initial;
+  -ms-flex-item-align: initial;
+  align-self: initial;
+  alignment-adjust: initial;
+  alignment-baseline: initial;
+  all: initial;
+  anchor-point: initial;
+  -webkit-animation: initial;
+  animation: initial;
+  -webkit-animation-delay: initial;
+  animation-delay: initial;
+  -webkit-animation-direction: initial;
+  animation-direction: initial;
+  -webkit-animation-duration: initial;
+  animation-duration: initial;
+  -webkit-animation-fill-mode: initial;
+  animation-fill-mode: initial;
+  -webkit-animation-iteration-count: initial;
+  animation-iteration-count: initial;
+  -webkit-animation-name: initial;
+  animation-name: initial;
+  -webkit-animation-play-state: initial;
+  animation-play-state: initial;
+  -webkit-animation-timing-function: initial;
+  animation-timing-function: initial;
+  azimuth: initial;
+  -webkit-backface-visibility: initial;
+  backface-visibility: initial;
+  background: initial;
+  background-attachment: initial;
+  background-clip: initial;
+  background-color: initial;
+  background-image: initial;
+  background-origin: initial;
+  background-position: initial;
+  background-repeat: initial;
+  background-size: initial;
+  baseline-shift: initial;
+  binding: initial;
+  bleed: initial;
+  bookmark-label: initial;
+  bookmark-level: initial;
+  bookmark-state: initial;
+  border: initial;
+  border-bottom: initial;
+  border-bottom-color: initial;
+  border-bottom-left-radius: initial;
+  border-bottom-right-radius: initial;
+  border-bottom-style: initial;
+  border-bottom-width: initial;
+  border-collapse: initial;
+  border-color: initial;
+  -o-border-image: initial;
+  border-image: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  border-image-slice: initial;
+  border-image-source: initial;
+  border-image-width: initial;
+  border-left: initial;
+  border-left-color: initial;
+  border-left-style: initial;
+  border-left-width: initial;
+  border-radius: initial;
+  border-right: initial;
+  border-right-color: initial;
+  border-right-style: initial;
+  border-right-width: initial;
+  border-spacing: initial;
+  border-style: initial;
+  border-top: initial;
+  border-top-color: initial;
+  border-top-left-radius: initial;
+  border-top-right-radius: initial;
+  border-top-style: initial;
+  border-top-width: initial;
+  border-width: initial;
+  bottom: initial;
+  -webkit-box-decoration-break: initial;
+  box-decoration-break: initial;
+  box-shadow: initial;
+  box-sizing: initial;
+  box-snap: initial;
+  box-suppress: initial;
+  -webkit-column-break-after: initial;
+  break-after: initial;
+  -webkit-column-break-before: initial;
+  break-before: initial;
+  -webkit-column-break-inside: initial;
+  break-inside: initial;
+  caption-side: initial;
+  chains: initial;
+  clear: initial;
+  clip: initial;
+  -webkit-clip-path: initial;
+  clip-path: initial;
+  clip-rule: initial;
+  color: initial;
+  color-interpolation-filters: initial;
+  -webkit-column-count: initial;
+  column-count: initial;
+  -webkit-column-fill: initial;
+  column-fill: initial;
+  -webkit-column-gap: initial;
+  column-gap: initial;
+  -webkit-column-rule: initial;
+  column-rule: initial;
+  -webkit-column-rule-color: initial;
+  column-rule-color: initial;
+  -webkit-column-rule-style: initial;
+  column-rule-style: initial;
+  -webkit-column-rule-width: initial;
+  column-rule-width: initial;
+  -webkit-column-span: initial;
+  column-span: initial;
+  -webkit-column-width: initial;
+  column-width: initial;
+  -webkit-columns: initial;
+  columns: initial;
+  contain: initial;
+  content: initial;
+  counter-increment: initial;
+  counter-reset: initial;
+  counter-set: initial;
+  crop: initial;
+  cue: initial;
+  cue-after: initial;
+  cue-before: initial;
+  cursor: initial;
+  direction: initial;
+  display: initial;
+  display-inside: initial;
+  display-list: initial;
+  display-outside: initial;
+  dominant-baseline: initial;
+  elevation: initial;
+  empty-cells: initial;
+  -webkit-filter: initial;
+  filter: initial;
+  -webkit-box-flex: initial;
+  -webkit-flex: initial;
+  -ms-flex: initial;
+  flex: initial;
+  -webkit-flex-basis: initial;
+  -ms-flex-preferred-size: initial;
+  flex-basis: initial;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: initial;
+  -ms-flex-direction: initial;
+  flex-direction: initial;
+  -webkit-flex-flow: initial;
+  -ms-flex-flow: initial;
+  flex-flow: initial;
+  -webkit-flex-grow: initial;
+  -ms-flex-positive: initial;
+  flex-grow: initial;
+  -webkit-flex-shrink: initial;
+  -ms-flex-negative: initial;
+  flex-shrink: initial;
+  -webkit-flex-wrap: initial;
+  -ms-flex-wrap: initial;
+  flex-wrap: initial;
+  float: initial;
+  float-offset: initial;
+  flood-color: initial;
+  flood-opacity: initial;
+  -webkit-flow-from: initial;
+  -ms-flow-from: initial;
+  flow-from: initial;
+  -webkit-flow-into: initial;
+  -ms-flow-into: initial;
+  flow-into: initial;
+  font: initial;
+  font-family: initial;
+  -webkit-font-feature-settings: initial;
+  font-feature-settings: initial;
+  -webkit-font-kerning: initial;
+  font-kerning: initial;
+  -webkit-font-language-override: initial;
+  font-language-override: initial;
+  font-size: initial;
+  font-size-adjust: initial;
+  font-stretch: initial;
+  font-style: initial;
+  font-synthesis: initial;
+  font-variant: initial;
+  font-variant-alternates: initial;
+  font-variant-caps: initial;
+  font-variant-east-asian: initial;
+  -webkit-font-variant-ligatures: initial;
+  font-variant-ligatures: initial;
+  font-variant-numeric: initial;
+  font-variant-position: initial;
+  font-weight: initial;
+  grid: initial;
+  grid-area: initial;
+  grid-auto-columns: initial;
+  grid-auto-flow: initial;
+  grid-auto-rows: initial;
+  -ms-grid-column: initial;
+  grid-column: initial;
+  grid-column-end: initial;
+  grid-column-start: initial;
+  -ms-grid-row: initial;
+  grid-row: initial;
+  grid-row-end: initial;
+  grid-row-start: initial;
+  grid-template: initial;
+  grid-template-areas: initial;
+  -ms-grid-columns: initial;
+  grid-template-columns: initial;
+  -ms-grid-rows: initial;
+  grid-template-rows: initial;
+  hanging-punctuation: initial;
+  height: initial;
+  -webkit-hyphens: initial;
+  -ms-hyphens: initial;
+  hyphens: initial;
+  icon: initial;
+  image-orientation: initial;
+  image-resolution: initial;
+  ime-mode: initial;
+  initial-letters: initial;
+  inline-box-align: initial;
+  -webkit-box-pack: initial;
+  -webkit-justify-content: initial;
+  -ms-flex-pack: initial;
+  justify-content: initial;
+  -ms-grid-column-align: initial;
+  justify-items: initial;
+  justify-self: initial;
+  left: initial;
+  letter-spacing: initial;
+  lighting-color: initial;
+  line-box-contain: initial;
+  line-break: initial;
+  line-grid: initial;
+  line-height: initial;
+  line-snap: initial;
+  line-stacking: initial;
+  line-stacking-ruby: initial;
+  line-stacking-shift: initial;
+  line-stacking-strategy: initial;
+  list-style: initial;
+  list-style-image: initial;
+  list-style-position: initial;
+  list-style-type: initial;
+  margin: initial;
+  margin-bottom: initial;
+  margin-left: initial;
+  margin-right: initial;
+  margin-top: initial;
+  marker-offset: initial;
+  marker-side: initial;
+  marks: initial;
+  -webkit-mask: initial;
+  mask: initial;
+  mask-box: initial;
+  mask-box-outset: initial;
+  mask-box-repeat: initial;
+  mask-box-slice: initial;
+  mask-box-source: initial;
+  mask-box-width: initial;
+  -webkit-mask-clip: initial;
+  mask-clip: initial;
+  -webkit-mask-image: initial;
+  mask-image: initial;
+  -webkit-mask-origin: initial;
+  mask-origin: initial;
+  -webkit-mask-position: initial;
+  mask-position: initial;
+  -webkit-mask-repeat: initial;
+  mask-repeat: initial;
+  -webkit-mask-size: initial;
+  mask-size: initial;
+  mask-source-type: initial;
+  mask-type: initial;
+  max-height: initial;
+  max-lines: initial;
+  max-width: initial;
+  min-height: initial;
+  min-width: initial;
+  move-to: initial;
+  nav-down: initial;
+  nav-index: initial;
+  nav-left: initial;
+  nav-right: initial;
+  nav-up: initial;
+  -o-object-fit: initial;
+  object-fit: initial;
+  -o-object-position: initial;
+  object-position: initial;
+  opacity: initial;
+  -webkit-box-ordinal-group: NaN;
+  -webkit-order: initial;
+  -ms-flex-order: initial;
+  order: initial;
+  orphans: initial;
+  outline: initial;
+  outline-color: initial;
+  outline-offset: initial;
+  outline-style: initial;
+  outline-width: initial;
+  overflow: initial;
+  overflow-wrap: initial;
+  overflow-x: initial;
+  overflow-y: initial;
+  padding: initial;
+  padding-bottom: initial;
+  padding-left: initial;
+  padding-right: initial;
+  padding-top: initial;
+  page: initial;
+  page-break-after: initial;
+  page-break-before: initial;
+  page-break-inside: initial;
+  page-policy: initial;
+  pause: initial;
+  pause-after: initial;
+  pause-before: initial;
+  -webkit-perspective: initial;
+  perspective: initial;
+  -webkit-perspective-origin: initial;
+  perspective-origin: initial;
+  pitch: initial;
+  pitch-range: initial;
+  play-during: initial;
+  position: initial;
+  presentation-level: initial;
+  quotes: initial;
+  -webkit-region-fragment: initial;
+  -ms-region-fragment: initial;
+  region-fragment: initial;
+  resize: initial;
+  rest: initial;
+  rest-after: initial;
+  rest-before: initial;
+  richness: initial;
+  right: initial;
+  rotation: initial;
+  rotation-point: initial;
+  row-gap: initial;
+  ruby-align: initial;
+  ruby-merge: initial;
+  ruby-position: initial;
+  -webkit-shape-image-threshold: initial;
+  shape-image-threshold: initial;
+  -webkit-shape-outside: initial;
+  shape-outside: initial;
+  -webkit-shape-margin: initial;
+  shape-margin: initial;
+  size: initial;
+  speak: initial;
+  speak-as: initial;
+  speak-header: initial;
+  speak-numeral: initial;
+  speak-punctuation: initial;
+  speech-rate: initial;
+  stress: initial;
+  string-set: initial;
+  -moz-tab-size: initial;
+  -o-tab-size: initial;
+  tab-size: initial;
+  table-layout: initial;
+  text-align: initial;
+  text-align-last: initial;
+  text-combine-upright: initial;
+  text-decoration: initial;
+  -webkit-text-decoration-color: initial;
+  text-decoration-color: initial;
+  -webkit-text-decoration-line: initial;
+  text-decoration-line: initial;
+  text-decoration-skip: initial;
+  -webkit-text-decoration-style: initial;
+  text-decoration-style: initial;
+  -webkit-text-emphasis: initial;
+  text-emphasis: initial;
+  -webkit-text-emphasis-color: initial;
+  text-emphasis-color: initial;
+  -webkit-text-emphasis-position: initial;
+  text-emphasis-position: initial;
+  -webkit-text-emphasis-style: initial;
+  text-emphasis-style: initial;
+  text-height: initial;
+  text-indent: initial;
+  text-justify: initial;
+  text-orientation: initial;
+  text-overflow: initial;
+  text-shadow: initial;
+  text-space-collapse: initial;
+  text-transform: initial;
+  text-underline-position: initial;
+  text-wrap: initial;
+  top: initial;
+  -webkit-transform: initial;
+  transform: initial;
+  -webkit-transform-origin: initial;
+  transform-origin: initial;
+  -webkit-transform-style: initial;
+  transform-style: initial;
+  transition: initial;
+  transition-delay: initial;
+  transition-duration: initial;
+  transition-property: initial;
+  transition-timing-function: initial;
+  unicode-bidi: initial;
+  vertical-align: initial;
+  visibility: initial;
+  voice-balance: initial;
+  voice-duration: initial;
+  voice-family: initial;
+  voice-pitch: initial;
+  voice-range: initial;
+  voice-rate: initial;
+  voice-stress: initial;
+  voice-volume: initial;
+  volume: initial;
+  white-space: initial;
+  widows: initial;
+  width: initial;
+  will-change: initial;
+  word-break: initial;
+  word-spacing: initial;
+  word-wrap: initial;
+  wrap-flow: initial;
+  wrap-through: initial;
+  -webkit-writing-mode: initial;
+  -ms-writing-mode: initial;
+  writing-mode: initial;
+  z-index: initial;
+  /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+  /* HTML5 display-role reset for older browsers */
+  /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+  /**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+  /**
+ * Remove the margin in all browsers (opinionated).
+ */
+  /* HTML5 display definitions
+   ========================================================================== */
+  /**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+  /**
+ * Add the correct display in IE 9-.
+ */
+  /**
+ * Add the correct display in iOS 4-7.
+ */
+  /**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+  /**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+  /* Links
+   ========================================================================== */
+  /**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+  /**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+  /* Text-level semantics
+   ========================================================================== */
+  /**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+  /**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+  /**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+  /**
+ * Add the correct font style in Android 4.3-.
+ */
+  /**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+  /**
+ * Add the correct background and color in IE 9-.
+ */
+  /**
+ * Add the correct font size in all browsers.
+ */
+  /**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+  /* Embedded content
+   ========================================================================== */
+  /**
+ * Remove the border on images inside links in IE 10-.
+ */
+  /**
+ * Hide the overflow in IE.
+ */
+  /* Grouping content
+   ========================================================================== */
+  /**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+  /**
+ * Add the correct margin in IE 8.
+ */
+  /**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+  /* Forms
+   ========================================================================== */
+  /**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+  /**
+ * Restore the font weight unset by the previous rule.
+ */
+  /**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+  /**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+  /**
+ * Remove the inner border and padding in Firefox.
+ */
+  /**
+ * Restore the focus styles unset by the previous rule.
+ */
+  /**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+  /**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+  /**
+ * Remove the default vertical scrollbar in IE.
+ */
+  /**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+  /**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+  /**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+  /**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+  /**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+  /**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+}
+#metail-mondo-app html,
+.metail-dialog html,
+#metail-mondo-app body,
+.metail-dialog body,
+#metail-mondo-app div,
+.metail-dialog div,
+#metail-mondo-app span,
+.metail-dialog span,
+#metail-mondo-app applet,
+.metail-dialog applet,
+#metail-mondo-app object,
+.metail-dialog object,
+#metail-mondo-app iframe,
+.metail-dialog iframe,
+#metail-mondo-app h1,
+.metail-dialog h1,
+#metail-mondo-app h2,
+.metail-dialog h2,
+#metail-mondo-app h3,
+.metail-dialog h3,
+#metail-mondo-app h4,
+.metail-dialog h4,
+#metail-mondo-app h5,
+.metail-dialog h5,
+#metail-mondo-app h6,
+.metail-dialog h6,
+#metail-mondo-app p,
+.metail-dialog p,
+#metail-mondo-app blockquote,
+.metail-dialog blockquote,
+#metail-mondo-app pre,
+.metail-dialog pre,
+#metail-mondo-app a,
+.metail-dialog a,
+#metail-mondo-app abbr,
+.metail-dialog abbr,
+#metail-mondo-app acronym,
+.metail-dialog acronym,
+#metail-mondo-app address,
+.metail-dialog address,
+#metail-mondo-app big,
+.metail-dialog big,
+#metail-mondo-app cite,
+.metail-dialog cite,
+#metail-mondo-app code,
+.metail-dialog code,
+#metail-mondo-app del,
+.metail-dialog del,
+#metail-mondo-app dfn,
+.metail-dialog dfn,
+#metail-mondo-app em,
+.metail-dialog em,
+#metail-mondo-app img,
+.metail-dialog img,
+#metail-mondo-app ins,
+.metail-dialog ins,
+#metail-mondo-app kbd,
+.metail-dialog kbd,
+#metail-mondo-app q,
+.metail-dialog q,
+#metail-mondo-app s,
+.metail-dialog s,
+#metail-mondo-app samp,
+.metail-dialog samp,
+#metail-mondo-app small,
+.metail-dialog small,
+#metail-mondo-app strike,
+.metail-dialog strike,
+#metail-mondo-app strong,
+.metail-dialog strong,
+#metail-mondo-app sub,
+.metail-dialog sub,
+#metail-mondo-app sup,
+.metail-dialog sup,
+#metail-mondo-app tt,
+.metail-dialog tt,
+#metail-mondo-app var,
+.metail-dialog var,
+#metail-mondo-app b,
+.metail-dialog b,
+#metail-mondo-app u,
+.metail-dialog u,
+#metail-mondo-app i,
+.metail-dialog i,
+#metail-mondo-app center,
+.metail-dialog center,
+#metail-mondo-app dl,
+.metail-dialog dl,
+#metail-mondo-app dt,
+.metail-dialog dt,
+#metail-mondo-app dd,
+.metail-dialog dd,
+#metail-mondo-app ol,
+.metail-dialog ol,
+#metail-mondo-app ul,
+.metail-dialog ul,
+#metail-mondo-app li,
+.metail-dialog li,
+#metail-mondo-app fieldset,
+.metail-dialog fieldset,
+#metail-mondo-app form,
+.metail-dialog form,
+#metail-mondo-app label,
+.metail-dialog label,
+#metail-mondo-app legend,
+.metail-dialog legend,
+#metail-mondo-app table,
+.metail-dialog table,
+#metail-mondo-app caption,
+.metail-dialog caption,
+#metail-mondo-app tbody,
+.metail-dialog tbody,
+#metail-mondo-app tfoot,
+.metail-dialog tfoot,
+#metail-mondo-app thead,
+.metail-dialog thead,
+#metail-mondo-app tr,
+.metail-dialog tr,
+#metail-mondo-app th,
+.metail-dialog th,
+#metail-mondo-app td,
+.metail-dialog td,
+#metail-mondo-app article,
+.metail-dialog article,
+#metail-mondo-app aside,
+.metail-dialog aside,
+#metail-mondo-app canvas,
+.metail-dialog canvas,
+#metail-mondo-app details,
+.metail-dialog details,
+#metail-mondo-app embed,
+.metail-dialog embed,
+#metail-mondo-app figure,
+.metail-dialog figure,
+#metail-mondo-app figcaption,
+.metail-dialog figcaption,
+#metail-mondo-app footer,
+.metail-dialog footer,
+#metail-mondo-app header,
+.metail-dialog header,
+#metail-mondo-app hgroup,
+.metail-dialog hgroup,
+#metail-mondo-app menu,
+.metail-dialog menu,
+#metail-mondo-app nav,
+.metail-dialog nav,
+#metail-mondo-app output,
+.metail-dialog output,
+#metail-mondo-app ruby,
+.metail-dialog ruby,
+#metail-mondo-app section,
+.metail-dialog section,
+#metail-mondo-app summary,
+.metail-dialog summary,
+#metail-mondo-app time,
+.metail-dialog time,
+#metail-mondo-app mark,
+.metail-dialog mark,
+#metail-mondo-app audio,
+.metail-dialog audio,
+#metail-mondo-app video,
+.metail-dialog video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+#metail-mondo-app article,
+.metail-dialog article,
+#metail-mondo-app aside,
+.metail-dialog aside,
+#metail-mondo-app details,
+.metail-dialog details,
+#metail-mondo-app figcaption,
+.metail-dialog figcaption,
+#metail-mondo-app figure,
+.metail-dialog figure,
+#metail-mondo-app footer,
+.metail-dialog footer,
+#metail-mondo-app header,
+.metail-dialog header,
+#metail-mondo-app hgroup,
+.metail-dialog hgroup,
+#metail-mondo-app menu,
+.metail-dialog menu,
+#metail-mondo-app nav,
+.metail-dialog nav,
+#metail-mondo-app section,
+.metail-dialog section {
+  display: block;
+}
+#metail-mondo-app body,
+.metail-dialog body {
+  line-height: 1;
+}
+#metail-mondo-app ol,
+.metail-dialog ol,
+#metail-mondo-app ul,
+.metail-dialog ul {
+  list-style: none;
+}
+#metail-mondo-app blockquote,
+.metail-dialog blockquote,
+#metail-mondo-app q,
+.metail-dialog q {
+  quotes: none;
+}
+#metail-mondo-app blockquote:before,
+.metail-dialog blockquote:before,
+#metail-mondo-app blockquote:after,
+.metail-dialog blockquote:after,
+#metail-mondo-app q:before,
+.metail-dialog q:before,
+#metail-mondo-app q:after,
+.metail-dialog q:after {
+  content: '';
+  content: none;
+}
+#metail-mondo-app table,
+.metail-dialog table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+#metail-mondo-app html,
+.metail-dialog html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+#metail-mondo-app body,
+.metail-dialog body {
+  margin: 0;
+}
+#metail-mondo-app article,
+.metail-dialog article,
+#metail-mondo-app aside,
+.metail-dialog aside,
+#metail-mondo-app details,
+.metail-dialog details,
+#metail-mondo-app figcaption,
+.metail-dialog figcaption,
+#metail-mondo-app figure,
+.metail-dialog figure,
+#metail-mondo-app footer,
+.metail-dialog footer,
+#metail-mondo-app header,
+.metail-dialog header,
+#metail-mondo-app main,
+.metail-dialog main,
+#metail-mondo-app menu,
+.metail-dialog menu,
+#metail-mondo-app nav,
+.metail-dialog nav,
+#metail-mondo-app section,
+.metail-dialog section,
+#metail-mondo-app summary,
+.metail-dialog summary {
+  /* 1 */
+  display: block;
+}
+#metail-mondo-app audio,
+.metail-dialog audio,
+#metail-mondo-app canvas,
+.metail-dialog canvas,
+#metail-mondo-app progress,
+.metail-dialog progress,
+#metail-mondo-app video,
+.metail-dialog video {
+  display: inline-block;
+}
+#metail-mondo-app audio:not([controls]),
+.metail-dialog audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+#metail-mondo-app progress,
+.metail-dialog progress {
+  vertical-align: baseline;
+}
+#metail-mondo-app template,
+.metail-dialog template,
+#metail-mondo-app [hidden],
+.metail-dialog [hidden] {
+  display: none;
+}
+#metail-mondo-app a,
+.metail-dialog a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+#metail-mondo-app a:active,
+.metail-dialog a:active,
+#metail-mondo-app a:hover,
+.metail-dialog a:hover {
+  outline-width: 0;
+}
+#metail-mondo-app abbr[title],
+.metail-dialog abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+#metail-mondo-app b,
+.metail-dialog b,
+#metail-mondo-app strong,
+.metail-dialog strong {
+  font-weight: inherit;
+}
+#metail-mondo-app b,
+.metail-dialog b,
+#metail-mondo-app strong,
+.metail-dialog strong {
+  font-weight: bolder;
+}
+#metail-mondo-app dfn,
+.metail-dialog dfn {
+  font-style: italic;
+}
+#metail-mondo-app h1,
+.metail-dialog h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+#metail-mondo-app mark,
+.metail-dialog mark {
+  background-color: #ff0;
+  color: #000;
+}
+#metail-mondo-app small,
+.metail-dialog small {
+  font-size: 80%;
+}
+#metail-mondo-app sub,
+.metail-dialog sub,
+#metail-mondo-app sup,
+.metail-dialog sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+#metail-mondo-app sub,
+.metail-dialog sub {
+  bottom: -0.25em;
+}
+#metail-mondo-app sup,
+.metail-dialog sup {
+  top: -0.5em;
+}
+#metail-mondo-app img,
+.metail-dialog img {
+  border-style: none;
+}
+#metail-mondo-app svg:not(:root),
+.metail-dialog svg:not(:root) {
+  overflow: hidden;
+}
+#metail-mondo-app code,
+.metail-dialog code,
+#metail-mondo-app kbd,
+.metail-dialog kbd,
+#metail-mondo-app pre,
+.metail-dialog pre,
+#metail-mondo-app samp,
+.metail-dialog samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+#metail-mondo-app figure,
+.metail-dialog figure {
+  margin: 1em 40px;
+}
+#metail-mondo-app hr,
+.metail-dialog hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+#metail-mondo-app button,
+.metail-dialog button,
+#metail-mondo-app input,
+.metail-dialog input,
+#metail-mondo-app select,
+.metail-dialog select,
+#metail-mondo-app textarea,
+.metail-dialog textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+#metail-mondo-app optgroup,
+.metail-dialog optgroup {
+  font-weight: bold;
+}
+#metail-mondo-app button,
+.metail-dialog button,
+#metail-mondo-app input,
+.metail-dialog input {
+  /* 1 */
+  overflow: visible;
+}
+#metail-mondo-app button,
+.metail-dialog button,
+#metail-mondo-app select,
+.metail-dialog select {
+  /* 1 */
+  text-transform: none;
+}
+#metail-mondo-app button::-moz-focus-inner,
+.metail-dialog button::-moz-focus-inner,
+#metail-mondo-app [type="button"]::-moz-focus-inner,
+.metail-dialog [type="button"]::-moz-focus-inner,
+#metail-mondo-app [type="reset"]::-moz-focus-inner,
+.metail-dialog [type="reset"]::-moz-focus-inner,
+#metail-mondo-app [type="submit"]::-moz-focus-inner,
+.metail-dialog [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+#metail-mondo-app button:-moz-focusring,
+.metail-dialog button:-moz-focusring,
+#metail-mondo-app [type="button"]:-moz-focusring,
+.metail-dialog [type="button"]:-moz-focusring,
+#metail-mondo-app [type="reset"]:-moz-focusring,
+.metail-dialog [type="reset"]:-moz-focusring,
+#metail-mondo-app [type="submit"]:-moz-focusring,
+.metail-dialog [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+#metail-mondo-app fieldset,
+.metail-dialog fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+#metail-mondo-app legend,
+.metail-dialog legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+#metail-mondo-app textarea,
+.metail-dialog textarea {
+  overflow: auto;
+}
+#metail-mondo-app [type="checkbox"],
+.metail-dialog [type="checkbox"],
+#metail-mondo-app [type="radio"],
+.metail-dialog [type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+#metail-mondo-app [type="number"]::-webkit-inner-spin-button,
+.metail-dialog [type="number"]::-webkit-inner-spin-button,
+#metail-mondo-app [type="number"]::-webkit-outer-spin-button,
+.metail-dialog [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+#metail-mondo-app [type="search"],
+.metail-dialog [type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+#metail-mondo-app [type="search"]::-webkit-search-cancel-button,
+.metail-dialog [type="search"]::-webkit-search-cancel-button,
+#metail-mondo-app [type="search"]::-webkit-search-decoration,
+.metail-dialog [type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+#metail-mondo-app ::-webkit-input-placeholder,
+.metail-dialog ::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+#metail-mondo-app ::-webkit-file-upload-button,
+.metail-dialog ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+#metail-mondo-app *,
+.metail-dialog * {
+  font-family: "Roboto", sans-serif;
+}
+#metail-mondo-app *,
+.metail-dialog *,
+#metail-mondo-app *:before,
+.metail-dialog *:before,
+#metail-mondo-app *:after,
+.metail-dialog *:after {
+  box-sizing: inherit;
+}
+#metail-mondo-app #main-layout {
+  z-index: 1499;
+  position: fixed;
+  -ms-touch-action: none;
+      touch-action: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+#metail-mondo-app #main-layout > .content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#metail-mondo-app #main-layout > .content > .page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+}
+#metail-mondo-app #main-layout.popup {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+  height: 554px;
+}
+#metail-mondo-app #main-layout.popup > .content {
+  border: 1px solid #d9d9d9;
+  border-top: 0;
+  border-bottom: 0;
+}
+#metail-mondo-app #main-layout.overlay,
+#metail-mondo-app #main-layout.flip {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (orientation: portrait) {
+  #metail-mondo-app #main-layout.overlay > .content,
+  #metail-mondo-app #main-layout.flip > .content {
+    width: 87%;
+  }
+}
+@media screen and (orientation: landscape) {
+  #metail-mondo-app #main-layout.overlay > .content,
+  #metail-mondo-app #main-layout.flip > .content {
+    width: 92%;
+  }
+}
+#metail-mondo-app #main-layout-phone-overlay {
+  z-index: 1499;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#metail-mondo-app .main-layout-toggle-enter#main-layout,
+#metail-mondo-app .main-layout-toggle-enter#floating-tab {
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+}
+#metail-mondo-app .main-layout-toggle-enter#main-layout-phone-overlay {
+  opacity: 0.01;
+}
+#metail-mondo-app .main-layout-toggle-enter.main-layout-toggle-enter-active {
+  transition-timing-function: ease-out;
+  transition-duration: 400ms;
+}
+#metail-mondo-app .main-layout-toggle-enter.main-layout-toggle-enter-active#main-layout,
+#metail-mondo-app .main-layout-toggle-enter.main-layout-toggle-enter-active#floating-tab {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+#metail-mondo-app .main-layout-toggle-enter.main-layout-toggle-enter-active#main-layout-phone-overlay {
+  opacity: 1;
+  transition-property: opacity;
+}
+#metail-mondo-app .main-layout-toggle-leave#main-layout,
+#metail-mondo-app .main-layout-toggle-leave#floating-tab {
+  -webkit-transform: translate(0%);
+          transform: translate(0%);
+}
+#metail-mondo-app .main-layout-toggle-leave#main-layout-phone-overlay {
+  opacity: 1;
+}
+#metail-mondo-app .main-layout-toggle-leave.main-layout-toggle-leave-active {
+  transition-timing-function: ease-in;
+  transition-duration: 300ms;
+}
+#metail-mondo-app .main-layout-toggle-leave.main-layout-toggle-leave-active#main-layout,
+#metail-mondo-app .main-layout-toggle-leave.main-layout-toggle-leave-active#floating-tab {
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+#metail-mondo-app .main-layout-toggle-leave.main-layout-toggle-leave-active#main-layout-phone-overlay {
+  opacity: 0.01;
+  transition-property: opacity;
+}
+#metail-mondo-app #floating-tab {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 0;
+  bottom: 20vh;
+}
+#metail-mondo-app #floating-tab .tab-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 69px;
+  cursor: pointer;
+}
+#metail-mondo-app #floating-tab .tab-btn .coathanger {
+  width: 28px;
+  height: auto;
+}
+#metail-mondo-app #floating-tab .hide-tab-btn {
+  padding: 11px 15px 13px;
+}
+#metail-mondo-app #floating-tab .hide-tab-btn .close-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+#metail-mondo-app #main-layout > .side-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#metail-mondo-app #main-layout > .side-bar .feedback-btn {
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+@media screen and (orientation: landscape) {
+  #metail-mondo-app #main-layout > .side-bar .feedback-btn {
+    display: none;
+  }
+}
+#metail-mondo-app #main-layout > .side-bar .feedback-btn .label {
+  font-size: 15px;
+  line-height: 15px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap;
+  text-shadow: 0 0 2px black;
+  margin: 0 0 16px;
+  padding: 0;
+  display: block;
+  background-color: transparent;
+}
+@media screen and (orientation: portrait) {
+  #metail-mondo-app #main-layout > .side-bar {
+    width: 13%;
+  }
+}
+@media screen and (orientation: landscape) {
+  #metail-mondo-app #main-layout > .side-bar {
+    width: 8%;
+  }
+}
+#metail-mondo-app #main-layout > .top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 29px;
+  margin-top: -29px;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  border-radius: 3px 3px 0 0;
+}
+#metail-mondo-app #main-layout > .top-bar > .top-bar-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#metail-mondo-app #main-layout > .top-bar > .top-bar-content .feedback-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+#metail-mondo-app #main-layout > .top-bar > .top-bar-content .feedback-btn .feedback-label {
+  font-size: 12px;
+  line-height: 12px;
+}
+#metail-mondo-app #tutorial-btn {
+  position: fixed;
+  width: 100%;
+  bottom: 4vh;
+  left: 0;
+  z-index: 2;
+  text-align: center;
+}
+#metail-mondo-app #tutorial-btn .tutorial-btn-btn {
+  width: 80%;
+  min-width: 200px;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;
+}
+#metail-mondo-app #tutorial-btn .tutorial-btn-btn span {
+  font-size: 16px;
+}
+#metail-mondo-app #tutorial-btn.tutorial-btn-enter {
+  bottom: -44px;
+}
+#metail-mondo-app #tutorial-btn.tutorial-btn-enter-active {
+  transition-timing-function: ease-out;
+  transition-duration: 0.4s;
+  transition-property: bottom;
+  bottom: 4vh;
+}
+#metail-mondo-app #tutorial-btn.tutorial-btn-leave {
+  bottom: 4vh;
+}
+#metail-mondo-app #tutorial-btn.tutorial-btn-leave-active {
+  transition-timing-function: ease-in;
+  transition-duration: 0.3s;
+  transition-property: bottom;
+  bottom: -44px;
+}
+#metail-mondo-app .tutorial {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  -ms-touch-action: none;
+      touch-action: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#metail-mondo-app .tutorial .tutorial-dialog {
+  color: rgba(0, 0, 0, 0.870588);
+  background-color: #fff;
+  transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+  border-radius: 2px;
+  background-image: url("../img/tutorial/asset-notification.png");
+  background-repeat: no-repeat;
+  background-size: 24%;
+  background-position: 3% bottom;
+  margin-top: 55vh;
+  max-height: 130px;
+  min-height: 110px;
+  position: relative;
+  width: 90%;
+  top: 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #metail-mondo-app .tutorial .tutorial-dialog {
+    background-image: url("../img/tutorial/asset-notification2x.png");
+  }
+}
+#metail-mondo-app .tutorial .tutorial-dialog span.metail-cta-facsimile {
+  width: 27%;
+  height: 40%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  position: absolute;
+  bottom: 10%;
+  margin: 0;
+  display: block;
+  pointer-events: none;
+}
+#metail-mondo-app .tutorial .tutorial-dialog span.tutorial-message {
+  width: 75%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  right: 0;
+  position: absolute;
+  padding: 1em;
+  font-weight: bold;
+}
+#metail-mondo-app .tutorial .close-btn-wrapper {
+  margin-top: 24px;
+}
+#metail-mondo-app .tutorial .close-btn-wrapper .close-btn {
+  box-shadow: rgba(0, 0, 0, 0.188235) 0px 10px 30px, rgba(0, 0, 0, 0.227451) 0px 6px 10px;
+}
+#metail-mondo-app .tutorial .tutorial-dialog-background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-enter {
+  opacity: 0.01;
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-enter .tutorial-dialog-background {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-enter-active {
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  opacity: 1;
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-enter-active .tutorial-dialog-background {
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-leave {
+  opacity: 1;
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-leave .tutorial-dialog-background {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-leave-active {
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  opacity: 0.01;
+}
+#metail-mondo-app .tutorial-dialog.tutorial-btn-leave-active .tutorial-dialog-background {
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  transition-property: background-color;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+#metail-mondo-app #fitting-room-page #main-display-container {
+  position: relative;
+  height: 75%;
+  padding: 10px 10px 0 10px;
+  transition: height 300ms ease;
+}
+#metail-mondo-app #fitting-room-page #main-display-container #main-display {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+#metail-mondo-app #fitting-room-page #main-display-container #main-display > .content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+}
+#metail-mondo-app #fitting-room-page #main-display-container #main-display > .content #hair-options-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 300ms ease;
+}
+#metail-mondo-app #fitting-room-page #main-display-container #main-display > .content #current-outfit-container {
+  position: absolute;
+  top: -10px;
+  right: -5px;
+  transition: opacity 300ms ease;
+  height: 100%;
+}
+#metail-mondo-app #fitting-room-page .create-btn {
+  z-index: 0;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+}
+#metail-mondo-app #fitting-room-page .edit-btn {
+  background-color: white;
+}
+#metail-mondo-app #fitting-room-page .edit-btn svg {
+  height: 20px !important;
+  width: 20px !important;
+  margin-left: 4px !important;
+}
+#metail-mondo-app #fitting-room-page #tabs-container {
+  position: relative;
+  transition: height 300ms ease;
+  background-color: #f6f7f7;
+}
+#metail-mondo-app #fitting-room-page #terms-and-conditions {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  line-height: 32px;
+  text-decoration: underline;
+  background-color: #f6f7f7;
+  cursor: pointer;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  transition: -webkit-transform 300ms ease;
+  transition: transform 300ms ease;
+  transition: transform 300ms ease, -webkit-transform 300ms ease;
+}
+#metail-mondo-app #fitting-room-page.wardrobe-expanded #main-display-container {
+  height: 51%;
+}
+#metail-mondo-app #fitting-room-page.wardrobe-expanded #main-display-container #main-display > .content #hair-options-container {
+  opacity: 0;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+#metail-mondo-app #fitting-room-page.wardrobe-expanded #main-display-container #main-display > .content #current-outfit-container {
+  opacity: 0;
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+}
+#metail-mondo-app #fitting-room-page.wardrobe-expanded .create-btn {
+  display: none !important;
+}
+#metail-mondo-app #fitting-room-page.wardrobe-expanded #tabs-container {
+  margin-top: -40%;
+}
+#metail-mondo-app #fitting-room-page.wardrobe-expanded #terms-and-conditions {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page {
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-thumb {
+  background: #989898 ;
+  border: 0px none #ffffff ;
+  border-radius: 50px;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-thumb:hover {
+  background: #898989 ;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-thumb:active {
+  background: #737373 ;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-track {
+  background: #fafafa ;
+  border: 0px none #ffffff ;
+  border-radius: 0px;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-track:hover {
+  background: #e2e4e4 ;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-track:active {
+  background: #b2b2b2 ;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page::-webkit-scrollbar-corner {
+  background: transparent;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page #main-display-container {
+  height: 100%;
+  border-right: 1px solid #d9d9d9;
+}
+.cart-btn {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding:6px 0 !important;
+	margin: 10px 0px 20px !important;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page #create-btn-container,
+#metail-mondo-app #main-layout.popup #fitting-room-page #tabs-container,
+#metail-mondo-app #main-layout.popup #fitting-room-page #terms-and-conditions {
+  border-right: 1px solid #d9d9d9;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page #terms-and-conditions {
+  position: initial;
+  -webkit-transform: none;
+          transform: none;
+}
+#metail-mondo-app #main-layout.popup #fitting-room-page:not(.demo) #tabs-container {
+  border-top: 1px solid #d9d9d9;
+}
+#metail-mondo-app #current-outfit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55px;
+  height: 100%;
+}
+#metail-mondo-app #current-outfit .outfit-item {
+  height: 55px;
+  margin-bottom: 7px;
+  cursor: pointer;
+}
+#metail-mondo-app #current-outfit .outfit-item > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#metail-mondo-app #current-outfit .outfit-item > div > div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 2px;
+  background-color: white;
+  z-index: 2;
+}
+#metail-mondo-app #current-outfit .outfit-item > div > div img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+#metail-mondo-app #current-outfit .outfit-item > div .recommended-size {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  display: block;
+  line-height: 55px;
+  width: auto;
+  height: 53px;
+  padding: 0 8px;
+  z-index: 1;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  margin-right: 55px;
+  opacity: 1;
+}
+#metail-mondo-app #current-outfit .outfit-item > div .recommended-size.sizerec-appear,
+#metail-mondo-app #current-outfit .outfit-item > div .recommended-size.sizerec-enter {
+  margin-right: 0;
+  opacity: 0;
+}
+#metail-mondo-app #current-outfit .outfit-item > div .recommended-size.sizerec-appear.sizerec-appear-active,
+#metail-mondo-app #current-outfit .outfit-item > div .recommended-size.sizerec-enter.sizerec-enter-active {
+  margin-right: 55px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out 1s;
+}
+#metail-mondo-app #current-outfit .outfit-item > div .recommended-size.sizerec-leave {
+  margin-right: 55px;
+  opacity: 1;
+}
+#metail-mondo-app #current-outfit .outfit-item > div .recommended-size.sizerec-leave.sizerec-leave-active {
+  margin-right: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out 4.5s;
+}
+#metail-mondo-app #current-outfit .outfit-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+#metail-mondo-app #current-outfit .outfit-item.item-enter {
+  opacity: 0;
+  height: 0;
+  margin-bottom: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+#metail-mondo-app #current-outfit .outfit-item.item-enter.item-enter-active {
+  opacity: 1;
+  margin-bottom: 7px;
+  height: 55px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+#metail-mondo-app #current-outfit .outfit-item.item-leave {
+  opacity: 1;
+  margin-bottom: 7px;
+  height: 55px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+#metail-mondo-app #current-outfit .outfit-item.item-leave.item-leave-active {
+  opacity: 0;
+  margin-bottom: 0;
+  height: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+#metail-mondo-app .garment-listing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  min-height: 102px;
+  padding: 2px;
+}
+#metail-mondo-app .garment-listing .garment-item {
+  position: relative;
+  cursor: pointer;
+  width: 33.333%;
+  padding: 2px;
+}
+#metail-mondo-app .garment-listing .garment-item > div {
+  background-color: white;
+  padding: 6px;
+}
+#metail-mondo-app .garment-listing .garment-item > div .garment-img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+#metail-mondo-app .garment-listing .garment-item > div .call-to-action {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 36px;
+  height: 36px;
+}
+#metail-mondo-app #hair-options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 12px;
+}
+#metail-mondo-app #hair-options .hair-option {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+#metail-mondo-app #hair-options .hair-option.selected {
+  border-color: #b2b2b2;
+}
+#metail-mondo-app #hair-options .hair-option img {
+  display: block;
+  width: 20px;
+}
+#metail-mondo-app #memodel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#metail-mondo-app #memodel #memodel-render {
+  display: block;
+  height: 100%;
+  max-width: none;
+}
+#metail-mondo-app #memodel #memodel-loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -28px;
+  margin-top: -36px;
+}
+#metail-mondo-app #memodel .rotate-btn {
+  display: block;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+#metail-mondo-app #memodel #rotate-model-clockwise,
+#metail-mondo-app #memodel #rotate-model-anticlockwise {
+  position: absolute;
+  padding: 9px;
+  bottom: 4%;
+  z-index: 3;
+}
+#metail-mondo-app #memodel #rotate-model-clockwise {
+  left: 10%;
+}
+#metail-mondo-app #memodel #rotate-model-anticlockwise {
+  right: 10%;
+}
+#metail-mondo-app .wardrobe-expanded #memodel #rotate-model-clockwise,
+#metail-mondo-app .wardrobe-expanded #memodel #rotate-model-anticlockwise {
+  opacity: 0;
+  z-index: 0;
+}
+#metail-mondo-app #main-layout.popup #memodel #memodel-render {
+  position: relative;
+  top: -4%;
+  height: 104%;
+}
+#metail-mondo-app #main-layout.popup #memodel #rotate-model-clockwise {
+  left: 0;
+}
+#metail-mondo-app #main-layout.popup #memodel #rotate-model-anticlockwise {
+  right: 0;
+}
+#metail-mondo-app #flip-phone-prompt-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ededed;
+}
+#metail-mondo-app #flip-phone-prompt-page .content-container {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 20px 24px;
+  padding: 32px 44px;
+}
+#metail-mondo-app #flip-phone-prompt-page .content-container .content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+#metail-mondo-app #flip-phone-prompt-page .content-container .content .message {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+#metail-mondo-app #flip-phone-prompt-page .content-container .content .message h1 {
+  margin: 0 0 7px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+#metail-mondo-app #flip-phone-prompt-page .content-container .content .message p {
+  color: #727272;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+}
+#metail-mondo-app #flip-phone-prompt-page .content-container .content img {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 100%;
+  width: auto;
+}
+#metail-mondo-app .body-customisation-page {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#metail-mondo-app .body-customisation-page > .top-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#metail-mondo-app .body-customisation-page > .content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px 12px;
+}
+#metail-mondo-app .body-customisation-page > .content h1 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+  margin: 14% 0 0 0;
+}
+#metail-mondo-app .body-customisation-page > .content h2 {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: normal;
+  margin: 0;
+}
+#metail-mondo-app .body-customisation-page > .content .form {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 3.5% 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+#metail-mondo-app .body-customisation-page > .content .form .measurement-inputs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -1.2%;
+}
+#metail-mondo-app .body-customisation-page > .content .form .measurement-inputs .value-input-container {
+  width: 54%;
+}
+#metail-mondo-app .body-customisation-page > .content .form .measurement-inputs .units-input-container {
+  width: 46%;
+}
+#metail-mondo-app .body-customisation-page > .content .form .measurement-inputs .units-input-container .units-input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#metail-mondo-app .body-customisation-page > .content .form .measurement-inputs .value-input svg {
+  fill: rgba(0, 0, 0, 0.87) !important;
+}
+#metail-mondo-app .body-customisation-page > .content .progress-dots {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 8% 0;
+}
+#metail-mondo-app .body-customisation-page > .content .progress-dots .marker {
+  margin: 0 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+#metail-mondo-app .body-customisation-page > .content .progress-dots .marker.active {
+  background-color: black;
+  border-color: black;
+}
+#metail-mondo-app .body-customisation-page > .content .continue-btn {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+#metail-mondo-app #section-loading-spinner {
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+#metail-mondo-app #section-loading-spinner .message {
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+#metail-mondo-app #height-weight-bra-page #band-size-input-container {
+  width: 48%;
+  margin-right: 4%;
+}
+#metail-mondo-app #height-weight-bra-page #cup-size-input-container {
+  width: 48%;
+}
+#metail-mondo-app #model-heads-page .form {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+#metail-mondo-app #model-heads-page .form #selected-model {
+  margin-bottom: 7%;
+}
+#metail-mondo-app #model-heads-page .form #selected-model img {
+  display: block;
+  margin: 0 auto;
+  width: 148px;
+  height: 148px;
+}
+#metail-mondo-app #model-heads-page .form #model-listing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#metail-mondo-app #model-heads-page .form #model-listing .model {
+  width: 23%;
+  border: 2px solid transparent;
+  margin: 1.2% 1%;
+}
+#metail-mondo-app #model-heads-page .form #model-listing .model.selected {
+  border-color: black;
+}
+#metail-mondo-app #model-heads-page .form #model-listing .model img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#metail-mondo-app #waist-hips-page #need-help-prompt {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e7e7e7;
+  padding: 5% 10px;
+  cursor: pointer;
+}
+#metail-mondo-app #waist-hips-page #need-help-prompt .question-mark {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  line-height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  text-align: center;
+}
+#metail-mondo-app #waist-hips-page #need-help-prompt .message {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 12px;
+}
+#metail-mondo-app #main-layout.popup #waist-hips-page #need-help-prompt .message {
+  font-size: 13.5px;
+}
+.metail-dialog .garment-summary-dialog .header {
+  height: 83px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+}
+.metail-dialog .garment-summary-dialog .header .thumbnail {
+  height: 100%;
+  width: auto;
+  padding: 4px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+.metail-dialog .garment-summary-dialog .header .info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding-left: 16px;
+  width: 70%;
+}
+.metail-dialog .garment-summary-dialog .header .info .pricing {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.metail-dialog .garment-summary-dialog .header .info .pricing .full-price,
+.metail-dialog .garment-summary-dialog .header .info .pricing .sale-price {
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 8px;
+}
+.metail-dialog .garment-summary-dialog .header .info .pricing .old-price {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.3);
+}
+.metail-dialog .garment-summary-dialog .header .info .title {
+  font-size: 16px;
+  line-height: 18px;
+  color: #888888;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.metail-dialog .garment-summary-dialog .buttons {
+  border-top: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4px 3px;
+}
+.metail-dialog .garment-summary-dialog .buttons .info-btn {
+  margin-right: 3px;
+}
+.metail-dialog .garment-summary-dialog .buttons .info-btn,
+.metail-dialog .garment-summary-dialog .buttons .take-off-btn {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.metail-dialog .garment-summary-dialog .sizing {
+  position: relative;
+  padding: 16px 0 0 0;
+  min-height: 104px;
+}
+.metail-dialog .garment-summary-dialog .sizing #section-loading-spinner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .message {
+  text-align: center;
+  font-weight: bold;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel.create-your-body-prompt {
+  padding-bottom: 8px;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel.create-your-body-prompt .message {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 4px;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel.create-your-body-prompt .create-btn {
+  color: white !important;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel.size-recommendation .message {
+  font-size: 14px;
+  line-height: 22px;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel.size-recommendation .message.not-recommended-size {
+  color: #888;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel.cannot-provide-size-recommendation .message {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 8px;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker > button,
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker > div {
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker .display {
+  width: 108px;
+  overflow: hidden;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker .display .sizes-container {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  width: 100%;
+  transition: 0.3s;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker .display .sizes-container .size {
+  position: relative;
+  height: 48px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 48px;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 100%;
+  text-align: center;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker .display .sizes-container .size .out-of-stock {
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+  font-size: 11px;
+  font-weight: bold;
+  color: #f44336;
+}
+.metail-dialog .garment-summary-dialog .sizing .sizing-panel .size-picker .display .sizes-container .size .out-of-stock.hidden {
+  display: none;
+}
+.metail-dialog .garment-summary-dialog .fit-advice {
+  width: 100%;
+}
+.metail-dialog .garment-summary-dialog .fit-advice .fit-advice-content {
+  max-height: 150px;
+  overflow: hidden;
+}
+.metail-dialog .garment-summary-dialog .fit-advice .fit-advice-content > div {
+  padding: 8px;
+}
+.metail-dialog .garment-summary-dialog .fit-advice .title-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.metail-dialog .garment-summary-dialog .fit-advice .title-row > div {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+}
+.metail-dialog .garment-summary-dialog .fit-advice .spirit-level {
+  height: 22px;
+  position: relative;
+  background-color: #f7f7f7;
+  border-radius: 11px;
+  margin: 8px;
+  font-size: 12px;
+}
+.metail-dialog .garment-summary-dialog .fit-advice .spirit-level .annotation {
+  position: absolute;
+  left: 6px;
+  z-index: 2;
+  line-height: 22px;
+}
+.metail-dialog .garment-summary-dialog .fit-advice .spirit-level:before {
+  content: '';
+  height: 22px;
+  left: 33.33%;
+  width: 33.33%;
+  position: absolute;
+  border-width: 0 2px 0 2px;
+  border-style: dotted;
+  border-color: rgba(97, 97, 97, 0.87);
+}
+.metail-dialog .garment-summary-dialog .fit-advice .spirit-level .bubble {
+  position: absolute;
+  margin-left: -7px;
+  z-index: 1;
+  top: 4px;
+  transition: left 0.2s;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #00e2b4;
+}
+.metail-dialog .garment-summary-dialog .add-to-bag-btn-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.metail-dialog .garment-summary-dialog .add-to-bag-btn-row .add-to-bag-btn span {
+  color: white;
+}
+.metail-dialog .garment-summary-dialog .add-to-bag-btn-row .add-to-bag-btn.disabled {
+  opacity: 0.35;
+}
+.metail-dialog .garment-summary-dialog .add-to-bag-btn-row .add-to-bag-btn.added svg {
+  fill: white !important;
+}
+.metail-dialog .waist-hips-help-dialog h4 {
+  font-weight: bold;
+}
+.metail-dialog .waist-hips-help-dialog h4 {
+  margin-top: 16px;
+  font-weight: bold;
+}
+.metail-dialog .waist-hips-help-dialog p {
+  margin-bottom: 16px;
+}
+body[data-metail-retailer-id="abof"] .metail-cta-anchor {
+  position: relative;
+  z-index: 1;
+}
+body[data-metail-retailer-id="abof"] .metail-cta {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 43px;
+  cursor: pointer;
+  background-image: url(../img/integrations/btn-cta.svg);
+  background-size: contain;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@-webkit-keyframes pulse-0 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse-0 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes pulse-1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse-1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="abof"] .metail-pulse-0 {
+  -webkit-animation: pulse-0 0.4s ease-out 1;
+          animation: pulse-0 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="abof"] .metail-pulse-1 {
+  -webkit-animation: pulse-1 0.4s ease-out 1;
+          animation: pulse-1 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="abof"] .metail-cta-pulsate {
+  -webkit-animation: metail-pulsate 3s ease-out infinite;
+          animation: metail-pulsate 3s ease-out infinite;
+}
+@-webkit-keyframes metail-pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  3% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+  6% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes metail-pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  3% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+  6% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="abof"] .metail-cta-pulsate > span {
+  color: #C9048F;
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: metail-ring 3s ease-out infinite;
+          animation: metail-ring 3s ease-out infinite;
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+}
+@-webkit-keyframes metail-ring {
+  2% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  35% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    opacity: 0;
+  }
+}
+@keyframes metail-ring {
+  2% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  35% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    opacity: 0;
+  }
+}
+body[data-metail-retailer-id="abof"] .tutorial-dialog .highlight {
+  color: #C9048F;
+}
+body[data-metail-retailer-id="abof"] #metail-mondo-app .body-customisation-page .progress-dots .marker.active {
+  background-color: #C9048F;
+  border-color: #C9048F;
+}
+body[data-metail-retailer-id="abof"] #metail-mondo-app #model-heads-page .form #model-listing .model.selected {
+  border-color: #C9048F;
+}
+body[data-metail-retailer-id="abof"] #metail-mondo-app #current-outfit .outfit-item .recommended-size {
+  background-color: #C9048F;
+}
+body[data-metail-retailer-id="abof"] .metail-cta-anchor {
+  position: relative;
+  float: left;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+body[data-metail-retailer-id="abof"] .metail-cta {
+  top: 10px;
+  left: 10px;
+}
+body[data-metail-retailer-id="abof"] .metail-cta,
+body[data-metail-retailer-id="abof"] .tutorial-dialog .metail-cta-facsimile {
+  width: 45px;
+  height: 45px;
+  background-image: url("../img/integrations/abof/cta.svg");
+}
+body[data-metail-retailer-id="abof"] #metail-mondo-app .tutorial .tutorial-dialog {
+  background-image: url("../img/integrations/abof/tutorial/asset-notification.png");
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body[data-metail-retailer-id="abof"] #metail-mondo-app .tutorial .tutorial-dialog {
+    background-image: url("../img/integrations/abof/tutorial/asset-notification2x.png");
+  }
+}
+body[data-metail-retailer-id="abof"][data-metail-page-type="product-details"] .metail-cta {
+  top: 24px;
+  left: 14px;
+  width: 50px;
+  height: 50px;
+}
+body[data-metail-retailer-id="adayroi"] .metail-cta-anchor {
+  position: relative;
+  z-index: 1;
+}
+body[data-metail-retailer-id="adayroi"] .metail-cta {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 43px;
+  cursor: pointer;
+  background-image: url(../img/integrations/btn-cta.svg);
+  background-size: contain;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@keyframes pulse-0 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse-1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="adayroi"] .metail-pulse-0 {
+  -webkit-animation: pulse-0 0.4s ease-out 1;
+          animation: pulse-0 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="adayroi"] .metail-pulse-1 {
+  -webkit-animation: pulse-1 0.4s ease-out 1;
+          animation: pulse-1 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="adayroi"] .metail-cta-pulsate {
+  -webkit-animation: metail-pulsate 3s ease-out infinite;
+          animation: metail-pulsate 3s ease-out infinite;
+}
+@keyframes metail-pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  3% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+  6% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="adayroi"] .metail-cta-pulsate > span {
+  color: #ea281c;
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: metail-ring 3s ease-out infinite;
+          animation: metail-ring 3s ease-out infinite;
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+}
+@keyframes metail-ring {
+  2% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  35% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    opacity: 0;
+  }
+}
+body[data-metail-retailer-id="adayroi"] .tutorial-dialog .highlight {
+  color: #ea281c;
+}
+body[data-metail-retailer-id="adayroi"] #metail-mondo-app .body-customisation-page .progress-dots .marker.active {
+  background-color: #ea281c;
+  border-color: #ea281c;
+}
+body[data-metail-retailer-id="adayroi"] #metail-mondo-app #model-heads-page .form #model-listing .model.selected {
+  border-color: #ea281c;
+}
+body[data-metail-retailer-id="adayroi"] #metail-mondo-app #current-outfit .outfit-item .recommended-size {
+  background-color: #ea281c;
+}
+body[data-metail-retailer-id="adayroi"] .metail-cta {
+  position: absolute;
+  width: 150px;
+  height: 46px;
+  cursor: pointer;
+  display: block;
+  margin-left: -75px;
+  background-image: url("../img/integrations/adayroi/cta.svg");
+}
+body[data-metail-retailer-id="adayroi"] .metail-cta:active {
+  background-image: url("../img/integrations/adayroi/cta-active.svg");
+}
+body[data-metail-retailer-id="adayroi"] .metail-cta,
+body[data-metail-retailer-id="adayroi"] .tutorial-dialog .metail-cta-facsimile {
+  background-image: url("../img/integrations/adayroi/cta.svg");
+  bottom: 0;
+}
+body[data-metail-retailer-id="adayroi"] .tutorial-dialog-view span.metail-cta-facsimile {
+  background-size: 100%;
+  background-position: right bottom;
+}
+body[data-metail-retailer-id="adayroi"][data-metail-page-type="product-details"] .metail-cta-anchor {
+  z-index: 10;
+  top: 100%;
+  left: -1.5rem;
+  position: absolute;
+}
+body[data-metail-retailer-id="adayroi"][data-metail-page-type="product-details"] .metail-cta-anchor .metail-cta {
+  bottom: 1.1rem;
+  left: 50vw;
+}
+body[data-metail-retailer-id="adayroi"][data-metail-page-type="product-listing"] .metail-cta-anchor {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+}
+body[data-metail-retailer-id="adayroi"][data-metail-page-type="product-listing"] .metail-cta-anchor .metail-cta {
+  bottom: 0px;
+  left: 50%;
+}
+body[data-metail-retailer-id="adayroi"] #metail-mondo-app #floating-tab {
+  z-index: 10;
+}
+body[data-metail-retailer-id="adayroi"] #metail-mondo-app #main-layout {
+  z-index: 10000;
+}
+body[data-metail-retailer-id="adayroi"] #metail-mondo-app .garment-listing .garment-item > div .call-to-action {
+  top: initial;
+  bottom: 0;
+  left: 2%;
+  width: 95%;
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta-anchor {
+  position: relative;
+  z-index: 1;
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 43px;
+  cursor: pointer;
+  background-image: url(../img/integrations/btn-cta.svg);
+  background-size: contain;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@keyframes pulse-0 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse-1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="princesspolly"] .metail-pulse-0 {
+  -webkit-animation: pulse-0 0.4s ease-out 1;
+          animation: pulse-0 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="princesspolly"] .metail-pulse-1 {
+  -webkit-animation: pulse-1 0.4s ease-out 1;
+          animation: pulse-1 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta-pulsate {
+  -webkit-animation: metail-pulsate 3s ease-out infinite;
+          animation: metail-pulsate 3s ease-out infinite;
+}
+@keyframes metail-pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  3% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+  6% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta-pulsate > span {
+  color: black;
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: metail-ring 3s ease-out infinite;
+          animation: metail-ring 3s ease-out infinite;
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+}
+@keyframes metail-ring {
+  2% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  35% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    opacity: 0;
+  }
+}
+body[data-metail-retailer-id="princesspolly"] .tutorial-dialog .highlight {
+  color: black;
+}
+body[data-metail-retailer-id="princesspolly"] #metail-mondo-app .body-customisation-page .progress-dots .marker.active {
+  background-color: black;
+  border-color: black;
+}
+body[data-metail-retailer-id="princesspolly"] #metail-mondo-app #model-heads-page .form #model-listing .model.selected {
+  border-color: black;
+}
+body[data-metail-retailer-id="princesspolly"] #metail-mondo-app #current-outfit .outfit-item .recommended-size {
+  background-color: black;
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta-pulsate > span {
+  border-radius: 0;
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta-anchor {
+  position: relative;
+  float: left;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta-facsimile {
+  background-image: url("../img/integrations/princesspolly/cta.svg");
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta {
+  top: 10px;
+  left: 10px;
+  width: 38px;
+  height: 44px;
+  background-image: url("../img/integrations/princesspolly/cta.svg");
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+body[data-metail-retailer-id="princesspolly"] .metail-cta:active {
+  background-image: url("../img/integrations/princesspolly/cta-active.svg");
+}
+body[data-metail-retailer-id="princesspolly"][data-metail-page-type="product-details"] .metail-cta-anchor .metail-cta {
+  top: 20px;
+  left: 20px;
+  width: 55px;
+  height: 64px;
+  box-shadow: 0px 9px 24px rgba(0, 0, 0, 0.3);
+}
+body[data-metail-retailer-id="princesspolly"] #metail-mondo-app {
+  z-index: 200;
+}
+body[data-metail-retailer-id="princesspolly"] #metail-mondo-app .garment-listing .garment-item > div .call-to-action {
+  left: 3px;
+}
+body[data-metail-retailer-id="princesspolly"] #olark-wrapper {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+body[data-metail-retailer-id="trymetail"] .metail-cta-anchor {
+  position: relative;
+  z-index: 1;
+}
+body[data-metail-retailer-id="trymetail"] .metail-cta,
+.product-item .metail-cta {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 43px;
+  cursor: pointer;
+  background-image: url(../img/cta.svg);
+  background-size: contain;
+      z-index: 999999;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@keyframes pulse-0 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes pulse-1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="trymetail"] .metail-pulse-0 {
+  -webkit-animation: pulse-0 0.4s ease-out 1;
+          animation: pulse-0 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="trymetail"] .metail-pulse-1 {
+  -webkit-animation: pulse-1 0.4s ease-out 1;
+          animation: pulse-1 0.4s ease-out 1;
+}
+body[data-metail-retailer-id="trymetail"] .metail-cta-pulsate {
+  -webkit-animation: metail-pulsate 3s ease-out infinite;
+          animation: metail-pulsate 3s ease-out infinite;
+}
+@keyframes metail-pulsate {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  3% {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+  6% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+body[data-metail-retailer-id="trymetail"] .metail-cta-pulsate > span {
+  color: black;
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-animation: metail-ring 3s ease-out infinite;
+          animation: metail-ring 3s ease-out infinite;
+  -webkit-animation-delay: inherit;
+          animation-delay: inherit;
+}
+@keyframes metail-ring {
+  2% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.8;
+  }
+  35% {
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    opacity: 0;
+  }
+}
+body[data-metail-retailer-id="trymetail"] .tutorial-dialog .highlight {
+  color: black;
+}
+body[data-metail-retailer-id="trymetail"] #metail-mondo-app .body-customisation-page .progress-dots .marker.active {
+  background-color: black;
+  border-color: black;
+}
+body[data-metail-retailer-id="trymetail"] #metail-mondo-app #model-heads-page .form #model-listing .model.selected {
+  border-color: black;
+}
+body[data-metail-retailer-id="trymetail"] #metail-mondo-app #current-outfit .outfit-item .recommended-size {
+  background-color: black;
+}
+body[data-metail-retailer-id="trymetail"] .metail-cta,
+.product-item .metail-cta,
+body[data-metail-retailer-id="trymetail"] .tutorial-dialog .metail-cta-anchor {
+  background-image: url("img/cta.svg");
+}

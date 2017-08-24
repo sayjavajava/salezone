@@ -22,7 +22,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
 	@Autowired
-	private DataSource dataSource;
+	private DataSource  dataSource;
 	
 	@Value("${spring.queries.users-query}")
 	private String usersQuery;
@@ -52,7 +52,19 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.antMatchers("/clothhome").permitAll()
 				.antMatchers("/product/cart").permitAll()
 				.antMatchers("/registration").permitAll()
+				.antMatchers("/checkout").permitAll()
+				.antMatchers("/productrest").permitAll()
+				.antMatchers("/productrest/{id}").permitAll()
+				.antMatchers("/product/deletecart/{id}").permitAll()
 
+                 .antMatchers("/product/cart/").permitAll()
+
+				.antMatchers("/productGender/{name}").permitAll()
+				.antMatchers("/productGender/male/").permitAll()
+				.antMatchers("/androidget").permitAll()
+				.antMatchers("/androidpost").permitAll()
+				.antMatchers("/product/cart/{name}").permitAll()
+				.antMatchers("/product/cart/test/{productname}").permitAll()
 				.antMatchers("/salwars").permitAll()
 				.antMatchers("/mail").permitAll()
 				.antMatchers("/sandals").permitAll()
@@ -67,6 +79,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				.antMatchers("/jeans").permitAll()
 				.antMatchers("/registeract").permitAll()
 				.antMatchers("/guests").permitAll()
+				.antMatchers("/tryme").permitAll()
+				.antMatchers("/maledressingroom").permitAll()
+				.antMatchers("/femaledressingroom").permitAll()
 				.antMatchers("/search").permitAll()
 				.antMatchers("/guests/{name}").hasAuthority("ADMIN")
 				.antMatchers(HttpMethod.GET, "user/allusers").hasRole("user")
@@ -86,7 +101,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	public void configure(WebSecurity web) throws Exception {
 	    web
 	       .ignoring()
-	       .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**","/cloth/**");
+	       .antMatchers("/resources/**", "/static/**", "/css/**", "/js/**", "/images/**","/cloth/**","/room/**");
 	}
 
 }

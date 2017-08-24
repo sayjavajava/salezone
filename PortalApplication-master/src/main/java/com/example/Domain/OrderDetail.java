@@ -16,29 +16,21 @@ public class OrderDetail {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    /*@ManyToOne
-    @JoinColumn(name="product_id")
-    private Product product;
-*/
+
     @ManyToOne
     @JoinColumn(name="purchased_By")
     private user PurchasedBy;
+
+
 
     @ManyToMany
     @JoinTable(name = "order_product_final", joinColumns = { @JoinColumn(name = "order_detail_id") }, inverseJoinColumns = { @JoinColumn(name = "productlist_id") })
     private Set<Product> productlist = new HashSet<Product>();
 
-    /*@OneToMany(fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
-    @JsonBackReference
-    @JoinTable(
-            name="order_detail_productlist",
-            joinColumns=@JoinColumn(name="order_detail_id", referencedColumnName="id"),
-            inverseJoinColumns=@JoinColumn(name="productlist_id", referencedColumnName="id"))
-            private Set<Product> productlist = new HashSet<Product>();
-*/
 
 
-   public Set<Product> getProductlist() {
+
+    public Set<Product> getProductlist() {
         return productlist;
     }
 
@@ -61,6 +53,15 @@ public class OrderDetail {
     private Date date;
 
 
+
+    @Column(name = "DeleveryAddress")
+    private String devaddressorder;
+
+
+
+    @Column(name = "PhNumber")
+    private String phnumber;
+
     @Column(name = "status")
     private String status;
 
@@ -79,8 +80,24 @@ public class OrderDetail {
         this.quantity = quantity;
         this.price = price;
         this.date = date;
+
     }
 
+    public String getPhnumber() {
+        return phnumber;
+    }
+
+    public void setPhnumber(String phnumber) {
+        this.phnumber = phnumber;
+    }
+
+    public String getDevaddressorder() {
+        return devaddressorder;
+    }
+
+    public void setDevaddressorder(String devaddressorder) {
+        this.devaddressorder = devaddressorder;
+    }
 
     public Date getDate() {
         return date;

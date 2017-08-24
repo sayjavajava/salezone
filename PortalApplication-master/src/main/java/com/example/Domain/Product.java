@@ -44,15 +44,7 @@ private Integer id;*/
     private OrderDetail orderDetail;
 */
 
-/*
-    public OrderDetail getOrderDetail() {
-        return orderDetail;
-    }
 
-    public void setOrderDetail(OrderDetail orderDetail) {
-        this.orderDetail = orderDetail;
-    }
-*/
 
     @ManyToMany(cascade = CascadeType.ALL)
 /*
@@ -62,6 +54,18 @@ private Integer id;*/
             inverseJoinColumns = { @JoinColumn(name = "fk_od_id") })
 */
     private Set<OrderDetail> orderDetails = new HashSet<OrderDetail>();
+
+    @Transient
+    private String categorychosen;
+
+    public String getCategorychosen() {
+        return categorychosen;
+    }
+
+    public void setCategorychosen(String categorychosen) {
+        this.categorychosen = categorychosen;
+    }
+
 
 
 

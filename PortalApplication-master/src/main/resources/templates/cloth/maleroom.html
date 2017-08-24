@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="pinterest" content="nopin" />
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Online Store Business Application</title>
+
+    <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/newstyle.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css" media="all" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/clothjs/custom.js"></script>
+
+
+    <script src="js/clothjs/jquery.min.js"></script>
+
+
+
+
+    <link href="css/clothcss/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/clothcss/fasthover.css" rel="stylesheet" type="text/css" media="all" />
+
+
+    <!-- js -->
+    <script src="js/clothjs/jquery.min.js"></script>
+    <!-- //js -->
+    <!-- cart -->
+    <script src="js/clothjs/simpleCart.min.js"></script>
+    <!-- cart -->
+    <!-- for bootstrap working -->
+    <script type="text/javascript" src="js/clothjs/bootstrap-3.1.1.min.js"></script>
+</head>
+
+<body id="try-metail" class="template-index" >
+
+<div class="header">
+    <div class="container">
+
+        <div class="w3l_logo">
+            <h1><a href="index.html">Online store<span>Application</span></a></h1>
+        </div>
+
+        <div class="cart box_1">
+            <a href="/checkout">
+                <img src="https://png.icons8.com/shopping-cart/color/24" title="Shopping Cart" width="48" height="48"><strong>Items</strong></a>
+        </div>
+        <div class="login-btn">
+            <a href="/login"><button class="btn btn-md btn-primary">Login</button></a>
+
+            <a href="/admin/products"><button class="btn btn-md btn-primary">Admin Panel</button></a>
+            <form method="get" action="/registration">
+                <button class="btn btn-md btn-warning btn-block" type="Submit">Create Account</button>
+            </form>
+
+        </div>
+
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div class="navigation">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header nav_2">
+                <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="clothhome" class="act">Home</a></li>
+                    <!-- Mega Menu -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+                        <ul class="dropdown-menu multi-column columns-3">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Clothing</h6>
+                                        <li><a href="dresses">Dresses<span>New</span></a></li>
+                                        <li><a href="skirts">Shorts & Skirts</a></li>
+                                        <li><a href="dresses">Jeans</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-3">
+                                    <ul class="multi-column-dropdown">
+                                        <h6>Ethnic Wear</h6>
+                                        <li><a th:href="@{single}">Single</a></li>
+                                        <li><a th:href="@{dresses}"><i>Summer Store</i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="w3ls_products_pos">
+                                        <h4>50%<i>Off/-</i></h4>
+                                        <img src="../../static/cloth/1.jpg"
+                                             th:src="@{/cloth/1.jpg}"  alt="" class="img-responsive"/>
+
+
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/about" > About Us</a></li>
+
+                    <li><a href="mail.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<div id="PageContainer">
+
+    <main class="main-content" role="main">
+
+
+        <div class="header-bar">Online Male Clother App</div>
+
+        <div class="featured-products">
+
+            <div class="grid grid--no-gutters grid--uniform collection-grid">
+
+                <div class="product-item grid__item small--one-half medium--one-third large--one-third widescreen--one-quarter">
+
+                    <div class="metail-cta-container" data-sku="1012236" data-id="9618724552" data-handle="kg-by-kurt-keiger-mistress-denim-heeled-mules">
+                        <a class="metail-cta-anchor"><a id="m_product-1" class="metail-cta"></a></a></div>
+
+                    <a class="product-item__link ">
+                        <img class="product-item__image" src="room/male/shirt-1.jpg" alt="image">
+
+                        <span class="product-item__meta">
+      <span class="product-item__meta__inner">
+        <p class="product-item__vendor">Shirt</p>
+        <p class="product-item__title">Black shirt</p>
+        <p class="product-item__price-wrapper">
+        <span class="visually-hidden">Regular price</span><strong>PK: 5500</strong></p>
+        <a href="/product/cart/test/m-blackshirt"> <div class="cart-btn" >Add to Cart </div></a>
+ </span>
+
+    </span>
+                    </a>
+                </div>
+                <div class="product-item grid__item small--one-half medium--one-third large--one-third widescreen--one-quarter">
+
+                    <div class="metail-cta-container" data-sku="1012236" data-id="9618724552" data-handle="kg-by-kurt-keiger-mistress-denim-heeled-mules">
+                        <a class="metail-cta-anchor"><a id="m_product-2" class="metail-cta"></a></a></div>
+
+                    <a class="product-item__link ">
+                        <img class="product-item__image" src="room/male/shirt-2.jpg" alt="image">
+
+                        <span class="product-item__meta">
+      <span class="product-item__meta__inner">
+        <p class="product-item__vendor">Shirt</p>
+        <p class="product-item__title">blue shirt</p>
+        <p class="product-item__price-wrapper">
+        <span class="visually-hidden">Regular price</span><strong>PK: 6500</strong></p>
+            <a href="/product/cart/test/m-bluewhite"> <div class="cart-btn" >Add to Cart </div></a>
+ </span>
+    </span>
+                    </a>
+                </div>
+                <div class="product-item grid__item small--one-half medium--one-third large--one-third widescreen--one-quarter">
+
+                    <div class="metail-cta-container" data-sku="1012236" data-id="9618724552" data-handle="kg-by-kurt-keiger-mistress-denim-heeled-mules">
+                        <a class="metail-cta-anchor"><a id="m_product-3" class="metail-cta"></a></a></div>
+
+                    <a class="product-item__link ">
+                        <img class="product-item__image" src="room/male/shirt-3.jpg" alt="image">
+
+                        <span class="product-item__meta">
+      <span class="product-item__meta__inner">
+        <p class="product-item__vendor">Shirt</p>
+        <p class="product-item__title">blue shirt</p>
+        <p class="product-item__price-wrapper">
+        <span class="visually-hidden">Regular price</span><strong>PK: 6500</strong></p>
+             <a href="/product/cart/test/m-blue"> <div class="cart-btn" >Add to Cart </div></a>
+ </span>
+    </span>
+                    </a>
+                </div>
+                <div class="product-item grid__item small--one-half medium--one-third large--one-third widescreen--one-quarter">
+
+                    <div class="metail-cta-container" data-sku="1012236" data-id="9618724552" data-handle="kg-by-kurt-keiger-mistress-denim-heeled-mules">
+                        <a class="metail-cta-anchor"><a id="m_product-4" class="metail-cta"></a></a></div>
+
+                    <a class="product-item__link ">
+                        <img class="product-item__image" src="room/male/jeans-1.jpg" alt="image">
+
+                        <span class="product-item__meta">
+      <span class="product-item__meta__inner">
+        <p class="product-item__vendor">Jeans</p>
+        <p class="product-item__title">Jeans</p>
+        <p class="product-item__price-wrapper">
+        <span class="visually-hidden">Regular price</span><strong>PK: 5500</strong></p>
+            <a href="/product/cart/test/m-jeans"> <div class="cart-btn" >Add to Cart </div></a>
+ </span>
+    </span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <div id="metail-mondo-app">
+<span data-reactroot="">
+<div id="main-layout" class="popup">
+<!-- react-empty: 3 -->
+<div class="top-bar">
+<div class="top-bar-content">
+<button class="close-btn" tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px 0px 0px 2px; padding: 2px; outline: none; font-size: 0px; font-weight: inherit; position: relative; z-index: 1; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 28px; height: 28px; top: 0px; background: none;">
+</button>
+<div class="feedback-btn"><div class="feedback-label"><strong>Male Model view clothes</strong></div>
+<button tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 2px; outline: none; font-size: 0px; font-weight: inherit; position: relative; z-index: 1; overflow: visible; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; width: 28px; height: 28px; top: 0px; background: none;">
+</button>
+</div></div></div>
+<div class="content">
+<div id="fitting-room-page" class="page demo">
+<div id="main-display-container">
+<div id="main-display">
+<div class="content">
+<div id="memodel">
+<img id="memodel-render" src="room/male/ManBody.png">
+<img id="rotate-model-clockwise" class="rotate-btn" src="room/rotate-clockwise.svg">
+<img id="rotate-model-anticlockwise" class="rotate-btn" src="room/rotate-anticlockwise.svg">
+</div>
+<span><div id="hair-options-container">
+<div class="edit-btn" style="visibility: hidden;"><button tabindex="0" type="button" style="border: 10px; box-sizing: border-box; display: inline-block; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); cursor: pointer; text-decoration: none; margin: 0px; padding: 0px; outline: none; font-size: inherit; font-weight: inherit; position: relative; z-index: 1; height: 36px; line-height: 36px; min-width: 88px; color: rgba(0, 0, 0, 0.87); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; border-radius: 2px; user-select: none; overflow: hidden; background-color: rgba(0, 0, 0, 0); text-align: center;"><div><svg viewBox="0 0 24 24" style="display: inline-block; color: rgba(0, 0, 0, 0.87); fill: rgba(0, 0, 0, 0.87); height: 24px; width: 24px; user-select: none; transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; vertical-align: middle; margin-left: 0px; margin-right: 0px;"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></svg><span style="position: relative; padding-left: 8px; padding-right: 16px; vertical-align: middle; letter-spacing: 0px; text-transform: none; font-weight: bold; font-size: 15px;">Edit</span></div></button></div>
+</div></span>
+<span><div id="current-outfit-container">
+<div id="current-outfit"><span>
+<div class="outfit-item" style="color: rgba(0, 0, 0, 0.87); background-color: rgb(255, 255, 255); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px; border-radius: 2px;"><div>
+<div><img id="recomended-1" src="room/male/shirt-1.jpg"></div>
+<span></span></div></div>
+<div class="outfit-item" style="color: rgba(0, 0, 0, 0.87); background-color: rgb(255, 255, 255); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px; border-radius: 2px;"><div>
+<div><img  id="recomended-2" src="room/male/shirt-2.jpg"></div><span></span></div></div>
+<div class="outfit-item" style="color: rgba(0, 0, 0, 0.87); background-color: rgb(255, 255, 255); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px; border-radius: 2px;"><div>
+<div><img id="recomended-3" src="room/male/shirt-3.jpg"></div><span></span></div></div></span></div></div></span>
+</div>
+</div></div>
+</div></div></div></span></div>
+
+</body>
+</html>

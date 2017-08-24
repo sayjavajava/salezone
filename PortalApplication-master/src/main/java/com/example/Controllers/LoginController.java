@@ -40,13 +40,17 @@ public class LoginController {
 
 	private Logger logger = LoggerFactory.getLogger(LoginController.class);
 
-	@RequestMapping(value={"/", "/login"}, method = RequestMethod.GET)
+	@RequestMapping(value={"/login"}, method = RequestMethod.GET)
 	public String login(){
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("login");
 		return "login";
 	}
 
+	@RequestMapping(value="/", method = RequestMethod.GET)
+	public String landpage(){
+		return "redirect:clothhome";
+	}
 
 	@RequestMapping(value="/registration")
 	public String registration(Model model){
@@ -58,6 +62,17 @@ public class LoginController {
 		//modelAndView.setViewName("registration");
 		return "registration";
 	}
+
+	@RequestMapping("admin/user/edit/{id}")
+	public String editecord(@PathVariable int id, Model model){
+		model.addAttribute("user",userService.findone(id));
+		List<Roles> allroles=rolesRepository.findAll();
+		//modelAndView.addObject("roleslist",allroles);
+		model.addAttribute("roleslist",allroles);
+		return "admin/edituser";
+	}
+
+
 	@RequestMapping("/registeract")
 	public ModelAndView createNewUser(@Valid user user, BindingResult bindingResult) {
 		ModelAndView modelAndView = new ModelAndView();
@@ -74,7 +89,7 @@ public class LoginController {
 		} else {
 
 			try {
-			notificationService.sendNotificaitoin(user);
+		//	notificationService.sendNotificaitoin(user);
 			}catch( Exception e ){
 				// catch error
 				logger.info("Error Sending Email: " + e.getMessage());
@@ -87,7 +102,38 @@ public class LoginController {
 		}
 		return modelAndView;
 	}
-	
+
+
+
+	@RequestMapping("/registeractedit")
+	public ModelAndView editUserdata(@Valid user user, BindingResult bindingResult) {
+		ModelAndView modelAndView = new ModelAndView();
+		String rolee = user.getRoleselected();
+		logger.info(rolee);
+		/*user userExists = userService.findByEmail(user.getEmail());
+		if (userExists != null) {
+			bindingResult
+					.rejectValue("email", "error.user",
+							"There is already a user registered with the email provided");
+		}*/
+		if (bindingResult.hasErrors()) {
+			modelAndView.setViewName("admin/edituser");
+		} else {
+
+			try {
+				//	notificationService.sendNotificaitoin(user);
+			}catch( Exception e ){
+				// catch error
+				logger.info("Error Sending Email: " + e.getMessage());
+			}
+
+			userService.save(user);
+			modelAndView.addObject("successMessage", "your Editting is Saved scucessfully");
+			modelAndView.addObject("user", new user());
+			modelAndView.setViewName("admin/edituser");
+		}
+		return modelAndView;
+	}
 	@RequestMapping(value="/admin/home", method = RequestMethod.GET)
 	public ModelAndView home(){
 		ModelAndView modelAndView = new ModelAndView();
@@ -117,7 +163,7 @@ public class LoginController {
 
 	}
 
-
+//edit admin/user/edit/{id}
 	@RequestMapping(value = "/access-denied",method = RequestMethod.GET)
 	public String AccessDenied (){ return "notfound";}
 }

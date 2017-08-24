@@ -85,12 +85,15 @@
                 <td th:text="${product.name}">Product Name</td>
                 <td th:text="${product.description}">descirption</td>
                 <td th:text="${product.price}">price</td>
+<!--
+               <td><img src="../../resources/static/*" th:src="@{${product.imageUrl}}" class="thumbnail"/></td>-->
+               <td><img src="../../static/*"
+                        th:src="@{'/'+${product.imageUrl}}" class="thumbnail"/></td>
 
-               <td><img src="../../resources/static/*" th:src="@{${product.imageUrl}}" class="thumbnail"/></td>
                <td><a th:href="${'/product/'+ product.id}">View</a></td>
                 <td><a th:href="${'/product/edit/'+ product.id}">Edit</a></td>
                 <td><a th:href="${'/product/delete/' + product.id}">Delete</a></td>
-               <td><a th:href="${'/product/cart/'+ product.id}">Add to cart</a></td>
+               <!--<td><a th:href="${'/product/cart/'+ product.id}">Add to cart</a></td>-->
             </tr>
         </table>
         </div>

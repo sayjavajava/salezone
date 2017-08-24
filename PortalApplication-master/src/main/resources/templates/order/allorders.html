@@ -81,7 +81,10 @@
                 <tr style="font-family: Sans-Serif ; font-style: inherit" >
                     <th>Order_ID</th>
                     <th>Quantity</th>
+
                     <th>Price</th>
+                    <th>Order Address</th>
+                    <th>Ph Number</th>
                     <th>Delete Order</th>
                 </tr>
                 <tr  th:each="order: ${orderslist}">
@@ -90,6 +93,8 @@
                     <td th:text="${order.id}">Product Name</td>
                     <td th:text="${order.quantity}">descirption</td>
                     <td th:text="${order.price}">price</td>
+                    <td th:text="${order.devaddressorder}">descirption</td>
+                    <td th:text="${order.phnumber}">descirption</td>
                     <td><a th:href="${'/order/delete/' + order.id}">Remove order</a></td>
                     <!--
                                         <td><a th:href="${'/order/edit/'+ order.id}">Edit</a></td>

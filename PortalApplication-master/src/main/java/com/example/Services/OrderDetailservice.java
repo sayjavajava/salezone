@@ -25,18 +25,23 @@ public class OrderDetailservice {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    public String palaceorder(Map<Product,Integer> allcollection, user userid){
+    public String palaceorder(Map<Product,Integer> allcollection, user userid,DelveryOrderAddress delveryOrderAddress){
     OrderDetail orderDetaildomain = new OrderDetail();
+    orderDetaildomain.setDevaddressorder(delveryOrderAddress.getCustomeraddress());
+    orderDetaildomain.setPhnumber(delveryOrderAddress.getPhnumber());
+    System.err.println(delveryOrderAddress.getCity());
     Date now = new Date();
         orderDetaildomain.setId(300);
-if(allcollection.size() != 0) {
-    for (Map.Entry<Product, Integer> entry : allcollection.entrySet()) {
+        if(allcollection.size() != 0) {
+         for (Map.Entry<Product, Integer> entry : allcollection.entrySet()) {
 
         orderDetaildomain.setQuantity(cart.getCartSize());
         //orderDetaildomain.setProduct(entry.getKey());
         orderDetaildomain.setPrice(((int) cart.getTotalCost()));
         orderDetaildomain.setUser(userid);
+       // orderDetaildomain.setAddress(delveryOrderAddress);
         orderDetaildomain.setDate(now);
+
         // System.err.println("items"+orderDetaildomain.getProduct().getId());
         // orderitem.setProduct(entry.getKey());
         // orderDetaildomain.setOrderitem(orderitem);
@@ -45,12 +50,13 @@ if(allcollection.size() != 0) {
 
         //orderDetailDAO.save(orderDetaildomain);
         //orderItemDAO.save(orderitem);
+
     }
 for(Product od : orderDetaildomain.getProductlist()){
 
         logger.info(od.getId()+od.getName());
 }
-    orderDetaildomain.setStatus("Non delivered");
+    orderDetaildomain.setStatus("In progress");
     orderDetailDAO.save(orderDetaildomain);
 }
         return null;
@@ -61,15 +67,7 @@ public Page<OrderDetail> findAll(Pageable pageable){
 
 
 public List<OrderDetail> findAllOrdsers(){
-  //  List<OrderDetail> testlist = orderDetailDAO.findAll();
 
-/*    for(OrderDetail orderDetail:testlist) {
-       // System.err.println("size " + orderDetail.getUser());
-        for (Product p : orderDetail.getProductlist()) {
-            System.err.println(p.getId());
-            System.err.println(p.getName());
-        }
-}*/
     return orderDetailDAO.findAll();
 }
     public String delete(int id){
@@ -98,4 +96,12 @@ public void DeleteOrder(int id){
 public Long countallorders(){
     return orderDetailDAO.count();
 }
+
+
+    public List<OrderDetail> findByPurchasedBy(int id){
+
+        return orderDetailDAO.findByPurchasedBy(id);
+    }
+
+
 }

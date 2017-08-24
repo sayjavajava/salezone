@@ -1,6 +1,7 @@
-
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
 <head>
     <title>Salezone</title>
     <!-- for-mobile-apps -->
@@ -64,7 +65,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <div class="facts">
                                         <div class="register">
                                             <form action="#" method="post">
-                                                <input name="Email" placeholder="Email Address" type="text" required="">
+                                                <input name="Email" placeholder="Email Address" type="text"  >
                                                 <input name="Password" placeholder="Password" type="password" required="">
                                                 <div class="sign-up">
                                                     <input type="submit" value="Sign in"/>
@@ -127,25 +128,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <div class="header">
     <div class="container">
-        <div class="w3l_login">
-            <a href="#" data-toggle="modal" data-target="#myModal88"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
-        </div>
+
         <div class="w3l_logo">
             <h1><a href="index.html">Online Store<span>Buy Your Favourite</span></a></h1>
         </div>
-        <div class="search">
-            <input class="search_box" type="checkbox" id="search_box">
-            <label class="icon-search" for="search_box"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></label>
-            <div class="search_form">
-                <form action="#" method="post">
-                    <input type="text" name="Search" placeholder="Search...">
-                    <input type="submit" value="Send">
-                </form>
-            </div>
-        </div>
+
         <div class="cart box_1">
-            <a href="product/cart">
+            <a href="/checkout">
                 <img src="https://png.icons8.com/shopping-cart/color/24" title="Shopping Cart" width="48" height="48"><strong>Items</strong></a>
+        </div>
+        <div class="login-btn">
+            <a href="/login"><button class="btn btn-md btn-primary">Login</button></a>
+
+            <a href="/admin/products"><button class="btn btn-md btn-primary">Admin Panel</button></a>
+            <form method="get" action="/registration">
+                <button class="btn btn-md btn-warning btn-block" type="Submit">Create Account</button>
+            </form>
+
         </div>
 
         <div class="clearfix"> </div>
@@ -175,35 +174,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <ul class="multi-column-dropdown">
                                         <h6>Clothing</h6>
                                         <li><a href="dresses">Dresses<span>New</span></a></li>
-                                        <li><a href="clothhome">Cloths</a></li>
-                                        <li><a href="skirts.html">Shorts & Skirts</a></li>
-                                        <li><a href="jeans">Jeans</a></li>
-                                        <li><a href="shirts">Shirts & Tops<span>New</span></a></li>
+                                        <li><a href="skirts">Shorts & Skirts</a></li>
+                                        <li><a href="dresses">Jeans</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-3">
                                     <ul class="multi-column-dropdown">
                                         <h6>Ethnic Wear</h6>
-                                        <li><a href="single">Single</a></li>
-                                        <li><a href="sarees">Sarees<span>New</span></a></li>
-                                        <li><a href="salwars">Salwaars<span>New</span></a></li>
-                                        <li><a href="clothproducts"><i>Summer Store</i></a></li>
+                                        <li><a th:href="@{single}">Single</a></li>
+                                        <li><a th:href="@{dresses}"><i>Summer Store</i></a></li>
                                     </ul>
                                 </div>
-                                <div class="col-sm-2">
-                                    <ul class="multi-column-dropdown">
-                                        <h6>Foot Wear</h6>
-                                        <li><a href="sandals.html">Flats</a></li>
-                                        <li><a href="sandals">Sandals</a></li>
-                                        <li><a href="sandals.html">Boots</a></li>
-                                        <li><a href="sandals.html">Heels</a></li>
-                                    </ul>
-                                </div>
+
                                 <div class="col-sm-4">
                                     <div class="w3ls_products_pos">
                                         <h4>50%<i>Off/-</i></h4>
                                         <img src="../../static/cloth/1.jpg"
-                                             alt="" class="img-responsive"/>
+                                             th:src="@{/cloth/1.jpg}"  alt="" class="img-responsive"/>
 
 
                                     </div>
@@ -214,8 +201,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </li>
                     <li>
                         <a href="/about" > About Us</a></li>
-                    <li><a href="short-codes.html">Short Codes</a></li>
-                    <li><a href="mail.html">Mail Us</a></li>
+                    <li><a href="mail.html">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -225,7 +211,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- banner -->
 <div class="banner10" id="home1">
     <div class="container">
-        <h2>Mail Us</h2>
+        <h2>Contact Us</h2>
     </div>
 </div>
 <!-- //banner -->
@@ -235,7 +221,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <ul>
             <li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a> <i>/</i></li>
-            <li>Mail Us</li>
+            <li>Contact Us</li>
         </ul>
     </div>
 </div>
@@ -244,26 +230,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- mail -->
 <div class="mail">
     <div class="container">
-        <h3>Mail Us</h3>
+        <h3>Contact Us</h3>
         <div class="agile_mail_grids">
             <div class="col-md-5 contact-left">
                 <h4>Address</h4>
-                <p>est eligendi optio cumque nihil impedit quo minus id quod maxime
-                    <span>26 56D Rescue,US</span></p>
+                <p>Gulberg III Lahore,Punjab Pakistan
+                    <span>Main Gulberg III</span></p>
                 <ul>
-                    <li>Free Phone :+1 078 4589 2456</li>
-                    <li>Telephone :+1 078 4589 2456</li>
-                    <li>Fax :+1 078 4589 2456</li>
-                    <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    <li>Phone: +92 323 3645245</li>
+                    <li>Telephone: +92 423 3645245</li>
+                    <li><a href="waqarfiaz34@gmail.com">waqarfiaz34@gmail.com</a></li>
                 </ul>
             </div>
             <div class="col-md-7 contact-left">
                 <h4>Contact Form</h4>
-                <form action="#" method="post">
-                    <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                    <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                    <input type="text" name="Telephone" value="Telephone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telephone';}" required="">
-                    <textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+                <form id="upload-file-form" role="form" th:object="${contactmail}" th:action="@{/contactsave}" method="post">
+
+                <!--  <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+-->
+
+                        <input type="text" class="form-control" th:field="*{name}"  placeholder="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}"/>
+                        <label style="color: red"
+                               th:if="${#fields.hasErrors('name')}" th:errors="*{name}"
+                               class="validation-message"></label>
+
+                    <input type="text" class="form-control" th:field="*{email}" placeholder="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+                    <label style="color: red"
+                           th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+                           class="validation-message"></label>
+
+
+                    <input type="text" class="form-control" th:field="*{phnumber}" placeholder="PhNumber"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phnumber';}"/>
+                    <label style="color: red"
+                           th:if="${#fields.hasErrors('phnumber')}" th:errors="*{phnumber}"
+                           class="validation-message"></label>
+
+
+                    <textarea name="message" th:field="*{message}" placeholder="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+                    <label style="color: red"
+                           th:if="${#fields.hasErrors('message')}" th:errors="*{message}"
+                           class="validation-message"></label>
+
+
                     <input type="submit" value="Submit" >
                 </form>
             </div>
@@ -271,7 +279,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
 
         <div class="contact-bottom">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d96908.54934770924!2d-73.74913540000001!3d40.62123259999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sanimal+rescue+service+near+Inwood%2C+New+York%2C+NY%2C+United+States!5e0!3m2!1sen!2sin!4v1436335928062" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27213.598983495696!2d74.3282263410833!3d31.504932407964315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919045a28ff1d39%3A0xf71e739b84b3c3c!2sGulberg+III%2C+Lahore%2C+Pakistan!5e0!3m2!1sen!2s!4v1503383419388" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
     </div>
@@ -300,46 +308,42 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <div class="w3_footer_grids">
             <div class="col-md-3 w3_footer_grid">
                 <h3>Contact</h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                <p>For more information contact us</p>
                 <ul class="address">
-                    <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+                    <li><i aria-hidden="true" class="glyphicon glyphicon-map-marker"></i>Shalamar Town, <span>Lahore Pakistan.</span></li>
+                    <li><i aria-hidden="true" class="glyphicon glyphicon-envelope"></i><a href="mailto:info@example.com">waqarfiaz34@gmail.com</a></li>
+                    <li><i aria-hidden="true" class="glyphicon glyphicon-earphone"></i>+92 3233645245</li>
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
                 <h3>Information</h3>
                 <ul class="info">
                     <li><a href="about">About Us</a></li>
-                    <li><a href="mail.html">Contact Us</a></li>
-
-                    <li><a href="faq.html">FAQ's</a></li>
-                    <li><a href="products.html">Special Products</a></li>
+                    <li><a href="mail">Contact Us</a></li>
+                    <li><a href="faq">FAQ's</a></li>
+                    <li><a href="/dresses">Special Products</a></li>
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
                 <h3>Category</h3>
                 <ul class="info">
-                    <li><a href="dresses.html">Dresses</a></li>
-                    <li><a href="sweaters.html">Sweaters</a></li>
-                    <li><a href="shirts.html">Shirts</a></li>
-                    <li><a href="sarees.html">Sarees</a></li>
-                    <li><a href="skirts.html">Shorts & Skirts</a></li>
+                    <li><a href="/femaledressingroom">Female</a></li>
+                    <li><a href="/maledressingroom">Male</a></li>
                 </ul>
             </div>
             <div class="col-md-3 w3_footer_grid">
                 <h3>Profile</h3>
                 <ul class="info">
-                    <li><a href="products.html">Summer Store</a></li>
-                    <li><a href="product/cart">My Cart</a></li>
+                    <li><a href="clothhome">Summer Store</a></li>
+                    <li><a href="/checkout">My Cart</a></li>
                 </ul>
                 <h4>Follow Us</h4>
                 <div class="agileits_social_button">
                     <ul>
-                        <li><a href="#" class="facebook"> </a></li>
-                        <li><a href="#" class="twitter"> </a></li>
-                        <li><a href="#" class="google"> </a></li>
-                        <li><a href="#" class="pinterest"> </a></li>
+                        <li><a class="facebook" href="#"> </a></li>
+                        <li><a class="twitter" href="#"> </a></li>
+                        <li><a class="google" href="#"> </a></li>
+                        <li><a class="pinterest" href="#"> </a></li>
                     </ul>
                 </div>
             </div>
@@ -349,11 +353,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="footer-copy">
         <div class="footer-copy1">
             <div class="footer-copy-pos">
-                <a href="#home1" class="scroll"><img src="cloth/arrow.png" alt=" " class="img-responsive" /></a>
+                <a class="scroll" href="#home1">
+                    <img alt="" class="img-responsive" src="/cloth/arrow.png">
+                </a>
             </div>
         </div>
         <div class="container">
-            <p>&copy; 2016 Women's Fashion. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            <p>© 2017 Online Store Application. All rights reserved</p>
         </div>
     </div>
 </div>

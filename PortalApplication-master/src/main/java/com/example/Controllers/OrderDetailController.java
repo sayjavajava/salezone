@@ -54,12 +54,12 @@ public class OrderDetailController {
     model.addAttribute("orderlist",orderDetailservice.findById(id));
         return "order/editorder";
     }
-
-
-    @RequestMapping("admin/delete/order/{id}")
+    
+    @RequestMapping("/order/delete/{id}")
     public String delete(@PathVariable int id){
         orderDetailservice.delete(id);
-        return "redirect:/products";
+        return "redirect:/admin/order/allordersdata";
     }
+    //edit admin/user/edit/{id}
 
 }

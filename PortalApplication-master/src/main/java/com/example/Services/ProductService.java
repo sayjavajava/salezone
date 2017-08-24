@@ -65,6 +65,12 @@ if(id !=0)
         Product list = productDAO.findByName(name);
         return list;
     }
+
+    public  List<Product> findOnMaleCategory(String name){
+        List<Product> productListmale= productDAO.findProductByCategoryName(name);
+
+        return productListmale;
+    }
 }
 
 
