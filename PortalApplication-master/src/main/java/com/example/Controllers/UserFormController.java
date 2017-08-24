@@ -16,12 +16,14 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -50,6 +52,9 @@ public class UserFormController {
     @Autowired
     private Contactservices contactservices;
 
+    @Autowired
+    private AndroidAddressServices androidAddressServices;
+
     @RequestMapping("userform/new")
     public String saverecord(Model model){
         model.addAttribute("UserForm",new UserForm());
@@ -77,10 +82,15 @@ public class UserFormController {
 
 
     @RequestMapping("/contactsave")
-    public String ContactSave(Contact contact){
+    public String ContactSave(@Valid Contact contact, BindingResult bindingResult){
+
+ModelAndView modelAndView = new ModelAndView();
+if (bindingResult.hasErrors()){
+    modelAndView.setViewName("cloth/mail");
+}
 
         contactservices.saveContact(contact);
-
+        modelAndView.addObject("successMessage", "Message Has Been sent");
         return "cloth/clothhome";
     }
 
@@ -103,6 +113,20 @@ public class UserFormController {
       model.addAttribute("contactmail", listmessage);
 
         return "messages" ;
+    }
+
+    @RequestMapping("/admin/orderpalaced")
+    public String Allandroidaddress(Model model)
+    {
+        List<AndroidAddress> listmessage = new ArrayList<AndroidAddress>();
+
+        Iterable <AndroidAddress> allmessages =androidAddressServices.allandroidaddress() ;
+
+        allmessages.forEach(listmessage ::add);
+
+        model.addAttribute("contactmail", listmessage);
+
+        return "androidmessages" ;
     }
 
 

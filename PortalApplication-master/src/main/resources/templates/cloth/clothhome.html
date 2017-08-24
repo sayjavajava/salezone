@@ -25,14 +25,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <link rel="stylesheet" type="text/css" th:href="@{/css/clothcss/popuo-box.css}" />
     <link rel="stylesheet" type="text/css" th:href="@{/css/clothcss/flexslider.css}" />
     <!-- js -->
-    <!--
-    <script src="js/jquery.min.js"></script>
 
-
-    <script src="js/simpleCart.min.js"></script>
-    &lt;!&ndash; cart &ndash;&gt;
-    &lt;!&ndash; for bootstrap working &ndash;&gt;
-    <script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>-->
 
 
     <script th:src="@{/js/clothjs/jquery.min.js}"></script>
@@ -245,7 +238,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <li><a href="/mail">Contact Us</a></li>
 
                   <div class="dropdown">
-                        <li class="dropbtn">Categories</li>
+                        <button class="btn btn-md btn-primary">Categories</button>
                         <div class="dropdown-content">
                             <a th:href="@{/productGender/female}">Female</a>
                             <a th:href="@{/productGender/male}">Male</a>
